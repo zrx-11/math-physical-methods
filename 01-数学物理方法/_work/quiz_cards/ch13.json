@@ -1,0 +1,102 @@
+{
+  "chapterId": "ch13",
+  "quizzes": [
+    {
+      "question": "弧长泛函 $L[y]=\\int_0^1\\sqrt{1+y'^2}\\,dx$ 的自变量是：",
+      "options": [
+        "一条曲线 $y(x)$",
+        "区间里的一个点 $x$",
+        "曲线的斜率 $y'$"
+      ],
+      "answer": 0,
+      "explain": "泛函输入整条曲线、输出一个数；点和斜率只是被积函数里的局部信息，不构成泛函的自变量。",
+      "relatedConceptId": "c1301"
+    },
+    {
+      "question": "泛函 $J[y]=\\int_0^1(y'^2+y)\\,dx$ 的欧拉–拉格朗日方程是：",
+      "options": [
+        "$2y''-1=0$",
+        "$2y''+1=0$",
+        "$y''-y=0"
+      ],
+      "answer": 0,
+      "explain": "$F=y'^2+y$，$F_{y'}=2y'$，$\\frac{d}{dx}F_{y'}=2y''$，$F_y=1$，代入得 $2y''-1=0$。选项 B 把 $F_y$ 符号写反，选项 C 对应 $F=y'^2+y^2$ 一类泛函。",
+      "relatedConceptId": "c1302"
+    },
+    {
+      "question": "$F=y\\sqrt{1+y'^2}$ 不显含 $x$，应使用哪条首次积分？",
+      "options": [
+        "$F-y'F_{y'}=C$（贝尔特拉米恒等式）",
+        "$F_{y'}=C$",
+        "$F_y=C$"
+      ],
+      "answer": 0,
+      "explain": "不显含 $x$ 用贝尔特拉米恒等式 $F-y'F_{y'}=C$；$F_{y'}=C$ 对应不显含 $y$ 的情形。$F_y=C$ 不是变分法的标准首次积分。",
+      "relatedConceptId": "c1302"
+    },
+    {
+      "question": "单摆 $L=\\tfrac12ml^2\\dot\\theta^2+mgl\\cos\\theta$ 导出的运动方程是：",
+      "options": [
+        "$\\ddot\\theta+\\frac{g}{l}\\sin\\theta=0$",
+        "$\\ddot\\theta-\\frac{g}{l}\\sin\\theta=0$",
+        "$\\ddot\\theta+\\frac{l}{g}\\sin\\theta=0"
+      ],
+      "answer": 0,
+      "explain": "$\\partial L/\\partial\\dot\\theta=ml^2\\dot\\theta$，全导得 $ml^2\\ddot\\theta$；$\\partial L/\\partial\\theta=-mgl\\sin\\theta$，整理得 $\\ddot\\theta+(g/l)\\sin\\theta=0$。选项 B 符号反，选项 C 把 $g/l$ 写成 $l/g$。",
+      "relatedConceptId": "c1303"
+    },
+    {
+      "question": "弦本征值问题 $-u''=\\lambda u$、$u(0)=u(1)=0$，取试探函数 $u=cx(1-x)$，瑞利商为：",
+      "options": [
+        "$10$",
+        "$\\pi^2\\approx9.8696$",
+        "$1/30$"
+      ],
+      "answer": 0,
+      "explain": "$\\int u'^2dx=c^2/3$，$\\int u^2dx=c^2/30$，商为 $(1/3)/(1/30)=10$。$\\pi^2\\approx9.8696$ 是真值第一本征值，$1/30$ 只是分母积分值。",
+      "relatedConceptId": "c1304"
+    }
+  ],
+  "flashcards": [
+    {
+      "front": "泛函和普通函数的自变量有什么区别？",
+      "back": "普通函数输入一个数输出一个数；泛函输入一整条曲线、输出一个数，泛函值由整条曲线的积分决定。",
+      "tags": [
+        "泛函",
+        "ch13"
+      ]
+    },
+    {
+      "front": "欧拉–拉格朗日方程的公式是什么？",
+      "back": "$\\frac{d}{dx}\\frac{\\partial F}{\\partial y'}-\\frac{\\partial F}{\\partial y}=0$，由一阶变分为零、分部积分并消去边界项得到。",
+      "tags": [
+        "变分法",
+        "ch13"
+      ]
+    },
+    {
+      "front": "固定端点条件在 EL 推导中起什么作用？",
+      "back": "扰动 $\\eta(a)=\\eta(b)=0$，分部积分留下的边界项 $[F_{y'}\\eta]_a^b$ 消失；端点自由时要换自然边界条件。",
+      "tags": [
+        "边界项",
+        "分部积分"
+      ]
+    },
+    {
+      "front": "哈密顿原理里拉格朗日量 $L$ 等于什么？",
+      "back": "$L=T-V$，动能减势能；作用量 $S=\\int L\\,dt$ 取驻值导出拉格朗日方程。写成 $T+V$ 符号会反。",
+      "tags": [
+        "哈密顿原理",
+        "作用量"
+      ]
+    },
+    {
+      "front": "瑞利–里兹法给出的本征值是上界还是下界？",
+      "back": "上界。试探函数空间是全集子集，子集内最优不低于全局最优，近似值从上方单调逼近真值。",
+      "tags": [
+        "瑞利商",
+        "里兹法"
+      ]
+    }
+  ]
+}

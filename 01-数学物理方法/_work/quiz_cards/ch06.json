@@ -1,0 +1,72 @@
+{
+  "chapterId": "ch06",
+  "quizzes": [
+    {
+      "question": "$f(t)=e^{2t}$ 的拉普拉斯变换及其收敛域是：",
+      "options": ["$\\dfrac{1}{s-2}$，$\\operatorname{Re}s>2$", "$\\dfrac{1}{s+2}$，$\\operatorname{Re}s>-2$", "$\\dfrac{1}{s^2+4}$", "$\\dfrac{2}{s^2}$"],
+      "answer": 0,
+      "explain": "$\\int_0^\\infty e^{2t}e^{-st}dt=1/(s-2)$，收敛要求 $\\operatorname{Re}(s-2)>0$。$1/(s+2)$ 对应 $e^{-2t}$；后两项分别是三角、幂次变换对。",
+      "relatedConceptId": "c601"
+    },
+    {
+      "question": "二阶导数的拉普拉斯变换 $\\mathcal L[f'']$ 是：",
+      "options": ["$s^2F(s)-sf(0)-f'(0)$", "$s^2F(s)-f(0)$", "$sF(s)-f(0)$", "$s^2F(s)$"],
+      "answer": 0,
+      "explain": "两次导数性质：$\\mathcal L[f'']=s^2F-sf(0)-f'(0)$，$f(0)$、$f'(0)$ 两项都进分子。漏掉初值项，变换后对应另一个初值问题。",
+      "relatedConceptId": "c602"
+    },
+    {
+      "question": "$Y(s)=1/(s+1)^2$ 的逆变换是：",
+      "options": ["$te^{-t}$", "$e^{-t}$", "$t^2e^{-t}$", "$e^{-2t}$"],
+      "answer": 0,
+      "explain": "二阶极点 $s=-1$ 对应 $t^{m-1}e^{at}$，$m=2$、$a=-1$，得 $te^{-t}$。一阶极点才给 $e^{-t}$；重极点不能只拆成 $A/(s+1)$。",
+      "relatedConceptId": "c603"
+    },
+    {
+      "question": "解 $y''+3y'+2y=0$、$y(0)=1$、$y'(0)=0$，变换后 $Y(s)$ 是：",
+      "options": ["$\\dfrac{s+3}{(s+1)(s+2)}$", "$\\dfrac{1}{(s+1)(s+2)}$", "$\\dfrac{s+1}{(s+1)(s+2)}$", "$\\dfrac{s+3}{s^2+3s}$"],
+      "answer": 0,
+      "explain": "代入导数性质得 $(s^2+3s+2)Y-s-3=0$，故 $Y=(s+3)/((s+1)(s+2))$。逆变换为 $2e^{-t}-e^{-2t}$，核对 $y(0)=1$、$y'(0)=0$。",
+      "relatedConceptId": "c604"
+    },
+    {
+      "question": "$\\mathcal L[\\sin\\omega t]$ 等于：",
+      "options": ["$\\dfrac{\\omega}{s^2+\\omega^2}$", "$\\dfrac{s}{s^2+\\omega^2}$", "$\\dfrac{1}{s-\\omega}$", "$\\dfrac{\\omega}{s^2-\\omega^2}$"],
+      "answer": 0,
+      "explain": "由 $\\sin\\omega t=(e^{i\\omega t}-e^{-i\\omega t})/(2i)$ 线性组合得 $\\omega/(s^2+\\omega^2)$。$s/(s^2+\\omega^2)$ 是余弦；$s^2-\\omega^2$ 对应双曲函数。",
+      "relatedConceptId": "c602"
+    }
+  ],
+  "flashcards": [
+    {
+      "front": "拉普拉斯变换的定义和收敛域是什么？",
+      "back": "$F(s)=\\int_0^\\infty f(t)e^{-st}dt$，$s=\\sigma+i\\omega$；收敛域是 $\\sigma>\\sigma_0$ 的右半平面，由函数增长速度决定。",
+      "tags": ["拉普拉斯变换", "ch06"]
+    },
+    {
+      "front": "一阶、二阶导数性质各带哪些初值项？",
+      "back": "$\\mathcal L[f']=sF-f(0)$；$\\mathcal L[f'']=s^2F-sf(0)-f'(0)$。初值自动进代数方程分子。",
+      "tags": ["导数性质", "ch06"]
+    },
+    {
+      "front": "一阶极点和 $m$ 阶极点分别对应什么时间域形状？",
+      "back": "一阶极点 $s=a$ 给 $Ae^{at}$；$m$ 阶极点给 $t^{m-1}e^{at}$ 乘多项式，拆部分分式要设到 $(s-a)^{-m}$。",
+      "tags": ["逆变换", "极点"]
+    },
+    {
+      "front": "共轭复极点 $\\sigma\\pm i\\omega$ 对应什么？",
+      "back": "$e^{\\sigma t}\\cos\\omega t$ 与 $e^{\\sigma t}\\sin\\omega t$；实部定衰减或增长，虚部定振荡频率。",
+      "tags": ["逆变换", "复极点"]
+    },
+    {
+      "front": "零初值时二阶方程的传递函数是什么？",
+      "back": "$H(s)=1/(s^2+ps+q)$，$Y=HF$；$H$ 只含系统系数，激励像函数是 $F$。",
+      "tags": ["传递函数", "ch06"]
+    },
+    {
+      "front": "终值定理什么时候不能用？",
+      "back": "极点在虚轴给振荡、在右半平面给增长，终值不存在；只有极点留在左半平面（至多原点一阶）才能取 $s\\to0$ 极限。",
+      "tags": ["终值定理", "ch06"]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "chapterId": "ch04",
+  "quizzes": [
+    {
+      "question": "$f(z)=\\dfrac{e^z}{z(z-1)}$ 在 $z=0$ 处的留数是：",
+      "options": ["$e$", "$-1$", "$1$"],
+      "answer": 1,
+      "explain": "一阶极点，乘 $z$ 取极限：$\\lim_{z\\to0}\\frac{e^z}{z-1}=-1$。$e$ 是 $z=1$ 处的留数，两个极点不要混。",
+      "relatedConceptId": "c403"
+    },
+    {
+      "question": "$f(z)=\\dfrac{e^z}{z(z-1)}$ 在 $z=1$ 处的留数是：",
+      "options": ["$e$", "$-1$", "$1/e$"],
+      "answer": 0,
+      "explain": "乘 $(z-1)$ 取极限：$\\lim_{z\\to1}\\frac{e^z}{z}=e$。围道 $\\lvert z\\rvert=2$ 内两极点留数和为 $e-1$。",
+      "relatedConceptId": "c403"
+    },
+    {
+      "question": "$\\dfrac{\\sin z}{z^3}$ 在 $z=0$ 处的奇点类型与留数是：",
+      "options": ["一阶极点，留数 $1$", "本性奇点", "二阶极点，留数 $0$"],
+      "answer": 2,
+      "explain": "展开 $\\sin z/z^3=z^{-2}-1/6+z^2/120-\\cdots$，负幂项到 $z^{-2}$，是二阶极点；$z^{-1}$ 项系数 $a_{-1}=0$，留数为零。",
+      "relatedConceptId": "c402"
+    },
+    {
+      "question": "$\\int_{-\\infty}^{\\infty}\\dfrac{dx}{1+x^2}$ 等于：",
+      "options": ["$2\\pi$", "$\\pi$", "$\\pi/2$"],
+      "answer": 1,
+      "explain": "上半平面极点 $z=i$，留数 $1/(2i)$；大圆弧上界 $\\pi/R\\to0$，积分 $=2\\pi i\\cdot1/(2i)=\\pi$。",
+      "relatedConceptId": "c404"
+    },
+    {
+      "question": "辐角原理 $\\frac{1}{2\\pi i}\\oint_C\\frac{f'(z)}{f(z)}dz$ 等于：",
+      "options": ["$N+P$", "$P-N$", "$N-P$"],
+      "answer": 2,
+      "explain": "$N$ 是围道内零点个数（按重数），$P$ 是极点个数（按阶数），结果为零点数减极点数；不是单纯数极点。",
+      "relatedConceptId": "c405"
+    }
+  ],
+  "flashcards": [
+    {
+      "front": "留数是洛朗展开中的哪个系数？",
+      "back": "$a_{-1}$，即 $\\frac{1}{z-z_0}$ 那一项的系数；闭路积分 $=2\\pi i$ 乘圈内留数之和。",
+      "tags": ["留数", "ch04"]
+    },
+    {
+      "front": "一阶极点的留数公式？",
+      "back": "$\\operatorname{Res}f(z_0)=\\lim_{z\\to z_0}(z-z_0)f(z)$；$m$ 阶极点乘 $(z-z_0)^m$ 后求 $m-1$ 阶导，除以 $(m-1)!$。",
+      "tags": ["留数公式", "ch04"]
+    },
+    {
+      "front": "本性奇点的留数怎么取？",
+      "back": "没有极限捷径，只能展洛朗级数，取 $1/(z-z_0)$ 项系数 $a_{-1}$；套极点公式会得到错误结果。",
+      "tags": ["本性奇点", "ch04"]
+    },
+    {
+      "front": "大圆弧积分的估值不等式是什么？",
+      "back": "$\\lvert\\int_{C_R}f\\,dz\\rvert\\le\\pi R\\max\\lvert f\\rvert$；必须证明上界随 $R\\to\\infty$ 趋于零，弧段才能丢弃。",
+      "tags": ["实积分", "ch04"]
+    },
+    {
+      "front": "Beta 型支点积分的标准结果？",
+      "back": "$\\int_0^\\infty\\frac{x^{a-1}}{1+x}dx=\\frac{\\pi}{\\sin\\pi a}$（$0<\\Re(a)<1$）；键孔围道两岸差因子 $1-e^{2\\pi i a}$。",
+      "tags": ["支点积分", "ch04"]
+    }
+  ]
+}

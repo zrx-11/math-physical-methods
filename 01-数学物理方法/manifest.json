@@ -659,7 +659,8 @@
       "prerequisites": [
         "c402",
         "c302"
-      ]
+      ],
+      "depthFragment": "concepts/c403-depth.md"
     },
     {
       "id": "c404",
@@ -920,7 +921,8 @@
       "prerequisites": [
         "c801",
         "c002"
-      ]
+      ],
+      "depthFragment": "concepts/c802-depth.md"
     },
     {
       "id": "c804",
@@ -1048,7 +1050,8 @@
       "prerequisites": [
         "c504",
         "c701"
-      ]
+      ],
+      "depthFragment": "concepts/c1001-depth.md"
     },
     {
       "id": "c1002",
@@ -1111,7 +1114,8 @@
       },
       "prerequisites": [
         "c805"
-      ]
+      ],
+      "depthFragment": "concepts/c1101-depth.md"
     },
     {
       "id": "c1102",
@@ -1172,7 +1176,8 @@
       },
       "prerequisites": [
         "c805"
-      ]
+      ],
+      "depthFragment": "concepts/c1201-depth.md"
     },
     {
       "id": "c1202",
@@ -1997,6 +2002,1109 @@
       "answer": 0,
       "explain": "试探空间是子空间，瑞利商从上方逼近真值。",
       "relatedConceptId": "c1304"
+    },
+    {
+      "id": "q29",
+      "chapterId": "ch00",
+      "type": "single",
+      "question": "$u(x,y)=x^2y+y^3$，在 $(1,2)$ 处 $\\frac{\\partial u}{\\partial y}$ 等于：",
+      "options": [
+        "$13$",
+        "$4$",
+        "$12$",
+        "$1$"
+      ],
+      "answer": 0,
+      "explain": "对 $y$ 求偏导时 $x$ 当常数：$u_y=x^2+3y^2=1+3\\cdot4=13$。$4$ 是对 $x$ 的偏导 $2xy$ 在该点的值，把两个偏导弄反了。",
+      "relatedConceptId": "c001",
+      "_added": true
+    },
+    {
+      "id": "q30",
+      "chapterId": "ch00",
+      "type": "single",
+      "question": "$y''-3y'+2y=0$ 的通解是：",
+      "options": [
+        "$y=C_1e^{t}+C_2e^{2t}$",
+        "$y=(C_1+C_2t)e^{2t}$",
+        "$y=e^{2t}(C_1\\cos t+C_2\\sin t)$"
+      ],
+      "answer": 0,
+      "explain": "特征方程 $\\lambda^2-3\\lambda+2=(\\lambda-1)(\\lambda-2)=0$，两个不同实根 $1,2$，各给一个指数。重根才乘 $t$，复根才出三角。",
+      "relatedConceptId": "c002",
+      "_added": true
+    },
+    {
+      "id": "q31",
+      "chapterId": "ch00",
+      "type": "single",
+      "question": "$y''+2y'+5y=0$ 的通解是：",
+      "options": [
+        "$y=e^{-t}(C_1\\cos 2t+C_2\\sin 2t)$",
+        "$y=C_1e^{-t}+C_2e^{-2t}$",
+        "$y=e^{-2t}(C_1\\cos t+C_2\\sin t)$"
+      ],
+      "answer": 0,
+      "explain": "特征方程 $(\\lambda+1)^2+4=0$，根为 $-1\\pm2i$。实部 $-1$ 进指数，虚部 $2$ 进三角频率，顺序不能对调。",
+      "relatedConceptId": "c002",
+      "_added": true
+    },
+    {
+      "id": "q32",
+      "chapterId": "ch00",
+      "type": "single",
+      "question": "$\\sum_{n=0}^{\\infty}n!\\,z^n$ 的收敛半径是：",
+      "options": [
+        "$0$",
+        "$1$",
+        "$\\infty$"
+      ],
+      "answer": 0,
+      "explain": "比值 $\\lvert a_n/a_{n+1}\\rvert=1/(n+1)\\to0$，所以 $R=0$，除 $z=0$ 外处处发散。系数增长得比几何级数快，圆缩成一个点。",
+      "relatedConceptId": "c003",
+      "_added": true
+    },
+    {
+      "id": "q33",
+      "chapterId": "ch00",
+      "type": "single",
+      "question": "$\\vec A=(x^2,y^2,z^2)$，$\\nabla\\cdot\\vec A$ 在 $(1,2,3)$ 处的值，以及 $u=x^2+y^2+z^2$ 的 $\\Delta u$，分别是：",
+      "options": [
+        "$12$ 与 $6$",
+        "$6$ 与 $12$",
+        "$14$ 与 $2$"
+      ],
+      "answer": 0,
+      "explain": "$\\nabla\\cdot\\vec A=2x+2y+2z=2(1+2+3)=12$；$\\Delta u=2+2+2=6$。散度是三个一阶偏导相加，拉普拉斯是三个二阶偏导相加。",
+      "relatedConceptId": "c004",
+      "_added": true
+    },
+    {
+      "id": "q34",
+      "chapterId": "ch01",
+      "type": "single",
+      "question": "复数 $z=-1+i$ 的指数式是：",
+      "options": [
+        "$\\sqrt2\\,e^{i3\\pi/4}$",
+        "$\\sqrt2\\,e^{i\\pi/4}$",
+        "$2\\,e^{i3\\pi/4}$"
+      ],
+      "answer": 0,
+      "explain": "模 $\\lvert z\\rvert=\\sqrt{(-1)^2+1^2}=\\sqrt2$，点在第二象限，辐角主值 $3\\pi/4$。$\\pi/4$ 对应第一象限，模取 2 则长度算错。",
+      "relatedConceptId": "c101",
+      "_added": true
+    },
+    {
+      "id": "q35",
+      "chapterId": "ch01",
+      "type": "single",
+      "question": "$(1+i)^3$ 等于：",
+      "options": [
+        "$2+2i$",
+        "$-2+2i$",
+        "$-2-2i$"
+      ],
+      "answer": 1,
+      "explain": "$(1+i)^2=2i$，再乘 $(1+i)$ 得 $2i(1+i)=2i-2=-2+2i$。指数式核对：模 $(\\sqrt2)^3=2\\sqrt2$，辐角 $3\\pi/4$。",
+      "relatedConceptId": "c101",
+      "_added": true
+    },
+    {
+      "id": "q36",
+      "chapterId": "ch01",
+      "type": "single",
+      "question": "$f(z)=\\bar z/z$ 在 $z\\to0$ 时的极限：",
+      "options": [
+        "存在且等于 $1$",
+        "存在且等于 $-1$",
+        "不存在"
+      ],
+      "answer": 2,
+      "explain": "沿实轴 $z=x$ 比值为 1，沿虚轴 $z=iy$ 比值为 $-1$，两条路径结果不同，违反任意路径趋近同一值的极限定义。",
+      "relatedConceptId": "c102",
+      "_added": true
+    },
+    {
+      "id": "q37",
+      "chapterId": "ch01",
+      "type": "single",
+      "question": "沿负实轴切开取主值分支，$\\ln(-1)$ 等于：",
+      "options": [
+        "$-i\\pi$",
+        "$0$",
+        "$i\\pi$"
+      ],
+      "answer": 2,
+      "explain": "主值辐角取 $(-\\pi,\\pi]$，$-1$ 的辐角主值为 $\\pi$，故 $\\ln(-1)=\\ln1+i\\pi=i\\pi$。$-i\\pi$ 是下岸取值，不属于主值分支。",
+      "relatedConceptId": "c103",
+      "_added": true
+    },
+    {
+      "id": "q38",
+      "chapterId": "ch01",
+      "type": "single",
+      "question": "无穷远点的邻域是：",
+      "options": [
+        "$\\lvert z\\rvert>R$ 的圆外区域",
+        "$\\lvert z-z_0\\rvert<\\varepsilon$ 的小圆",
+        "$\\lvert z\\rvert<1$ 的单位圆内"
+      ],
+      "answer": 0,
+      "explain": "复球面上无穷远点对应北极，其邻域是半径任意大的圆外部；小圆是有限点的邻域，内外正好相反。",
+      "relatedConceptId": "c104",
+      "_added": true
+    },
+    {
+      "id": "q39",
+      "chapterId": "ch02",
+      "type": "single",
+      "question": "设 $f=u+iv$，柯西–黎曼方程的正确形式是：",
+      "options": [
+        "$u_x=v_y,\\ u_y=-v_x$",
+        "$u_x=-v_y,\\ u_y=v_x$",
+        "$u_x=u_y,\\ v_x=v_y$"
+      ],
+      "answer": 0,
+      "explain": "沿实轴逼近得 $f'=u_x+iv_x$，沿虚轴逼近得 $f'=v_y-iu_y$，配对得 $u_x=v_y$、$u_y=-v_x$。第二个方程的负号来自 $1/i=-i$。",
+      "relatedConceptId": "c202",
+      "_added": true
+    },
+    {
+      "id": "q40",
+      "chapterId": "ch02",
+      "type": "single",
+      "question": "已知调和函数 $u=x^2-y^2$，其共轭调和函数 $v$ 为（差常数）：",
+      "options": [
+        "$-2xy$",
+        "$2xy$",
+        "$x^2+y^2$"
+      ],
+      "answer": 1,
+      "explain": "$u_x=2x=v_y$ 积分得 $v=2xy+h(x)$；由 $u_y=-2y=-v_x$ 得 $h'(x)=0$，故 $v=2xy+C$，对应 $f=z^2$。",
+      "relatedConceptId": "c202",
+      "_added": true
+    },
+    {
+      "id": "q41",
+      "chapterId": "ch02",
+      "type": "single",
+      "question": "$\\sin i$ 等于：",
+      "options": [
+        "$\\sinh1$",
+        "$i\\sin1$",
+        "$i\\sinh1$"
+      ],
+      "answer": 2,
+      "explain": "$\\sin i=(e^{-1}-e)/(2i)=i\\sinh1$，$\\sinh1\\approx1.1752$，虚轴上正弦按双曲函数增长，不再被 1 夹住。",
+      "relatedConceptId": "c204",
+      "_added": true
+    },
+    {
+      "id": "q42",
+      "chapterId": "ch02",
+      "type": "single",
+      "question": "函数 $f(z)=\\bar z$ 的可导情况是：",
+      "options": [
+        "处处可导",
+        "处处连续、处处不可导",
+        "仅在原点可导"
+      ],
+      "answer": 1,
+      "explain": "差商 $\\overline{\\Delta z}/\\Delta z$ 沿实轴得 1、沿虚轴得 $-1$，方向依赖；$\\bar z$ 连续但不满足柯西–黎曼方程，处处不可导。",
+      "relatedConceptId": "c201",
+      "_added": true
+    },
+    {
+      "id": "q43",
+      "chapterId": "ch02",
+      "type": "single",
+      "question": "保角映射中，长度的局部缩放因子是：",
+      "options": [
+        "$\\arg f'(z)$",
+        "$\\lvert f'(z)\\rvert$",
+        "$f'(z)$ 的实部"
+      ],
+      "answer": 1,
+      "explain": "一阶近似 $f'(z_0)(z-z_0)$ 里，辐角负责转动、模负责拉伸；角度保住，长度按 $\\lvert f'(z)\\rvert$ 缩放，换算边界条件时要补这个因子。",
+      "relatedConceptId": "c205",
+      "_added": true
+    },
+    {
+      "id": "q44",
+      "chapterId": "ch03",
+      "type": "single",
+      "question": "$\\oint_{\\lvert z-1\\rvert=1}\\dfrac{e^z}{z-1}\\,dz$ 等于：",
+      "options": [
+        "$2\\pi i e$",
+        "$0$",
+        "$2\\pi i$"
+      ],
+      "answer": 0,
+      "explain": "$f(z)=e^z$ 解析，$z_0=1$ 在圆内，柯西公式给出积分 $=2\\pi i f(1)=2\\pi i e\\approx17.0794\\,i$。",
+      "relatedConceptId": "c303",
+      "_added": true
+    },
+    {
+      "id": "q45",
+      "chapterId": "ch03",
+      "type": "single",
+      "question": "$\\oint_{\\lvert z\\rvert=1}\\dfrac{dz}{z-2}$ 等于：",
+      "options": [
+        "$2\\pi i$",
+        "$0$",
+        "$-2\\pi i$"
+      ],
+      "answer": 1,
+      "explain": "唯一奇点 $z=2$ 在单位圆外部，围道内部函数解析，柯西定理给出闭路积分为零；不能对圈外奇点套柯西公式。",
+      "relatedConceptId": "c302",
+      "_added": true
+    },
+    {
+      "id": "q46",
+      "chapterId": "ch03",
+      "type": "single",
+      "question": "$\\oint_{\\lvert z\\rvert=1}\\dfrac{e^z}{z^2}\\,dz$ 等于：",
+      "options": [
+        "$2\\pi i e$",
+        "$\\pi i$",
+        "$2\\pi i$"
+      ],
+      "answer": 2,
+      "explain": "高阶导数公式 $n=1$，积分 $=2\\pi i f'(0)$，$f'(z)=e^z$，$f'(0)=1$，结果 $2\\pi i$。分母 $z^2$ 对应 $n+1=2$，分子 $1!=1$。",
+      "relatedConceptId": "c304",
+      "_added": true
+    },
+    {
+      "id": "q47",
+      "chapterId": "ch03",
+      "type": "single",
+      "question": "曲线参数化 $z=z(t)$ 时，复积分的微元 $dz$ 是：",
+      "options": [
+        "$\\lvert z'(t)\\rvert\\,dt$",
+        "$z'(t)\\,dt$",
+        "$dx+dy$"
+      ],
+      "answer": 1,
+      "explain": "$dz=z'(t)dt$ 是带方向的复数微元；$\\lvert z'(t)\\rvert dt=ds$ 是弧长微元，二者用途不同，不能互换。",
+      "relatedConceptId": "c301",
+      "_added": true
+    },
+    {
+      "id": "q48",
+      "chapterId": "ch03",
+      "type": "single",
+      "question": "非常数解析函数 $\\lvert f(z)\\rvert$ 的最大值出现在：",
+      "options": [
+        "区域内部",
+        "区域边界上",
+        "导数为零的临界点"
+      ],
+      "answer": 1,
+      "explain": "最大模原理规定内部取不到最大模，最大值只能在边界取得；常数函数是唯一例外。实函数的内部峰不能套到解析函数上。",
+      "relatedConceptId": "c305",
+      "_added": true
+    },
+    {
+      "id": "q49",
+      "chapterId": "ch04",
+      "type": "single",
+      "question": "$f(z)=\\dfrac{e^z}{z(z-1)}$ 在 $z=0$ 处的留数是：",
+      "options": [
+        "$e$",
+        "$-1$",
+        "$1$"
+      ],
+      "answer": 1,
+      "explain": "一阶极点，乘 $z$ 取极限：$\\lim_{z\\to0}\\frac{e^z}{z-1}=-1$。$e$ 是 $z=1$ 处的留数，两个极点不要混。",
+      "relatedConceptId": "c403",
+      "_added": true
+    },
+    {
+      "id": "q50",
+      "chapterId": "ch04",
+      "type": "single",
+      "question": "$f(z)=\\dfrac{e^z}{z(z-1)}$ 在 $z=1$ 处的留数是：",
+      "options": [
+        "$e$",
+        "$-1$",
+        "$1/e$"
+      ],
+      "answer": 0,
+      "explain": "乘 $(z-1)$ 取极限：$\\lim_{z\\to1}\\frac{e^z}{z}=e$。围道 $\\lvert z\\rvert=2$ 内两极点留数和为 $e-1$。",
+      "relatedConceptId": "c403",
+      "_added": true
+    },
+    {
+      "id": "q51",
+      "chapterId": "ch04",
+      "type": "single",
+      "question": "$\\dfrac{\\sin z}{z^3}$ 在 $z=0$ 处的奇点类型与留数是：",
+      "options": [
+        "一阶极点，留数 $1$",
+        "本性奇点",
+        "二阶极点，留数 $0$"
+      ],
+      "answer": 2,
+      "explain": "展开 $\\sin z/z^3=z^{-2}-1/6+z^2/120-\\cdots$，负幂项到 $z^{-2}$，是二阶极点；$z^{-1}$ 项系数 $a_{-1}=0$，留数为零。",
+      "relatedConceptId": "c402",
+      "_added": true
+    },
+    {
+      "id": "q52",
+      "chapterId": "ch04",
+      "type": "single",
+      "question": "$\\int_{-\\infty}^{\\infty}\\dfrac{dx}{1+x^2}$ 等于：",
+      "options": [
+        "$2\\pi$",
+        "$\\pi$",
+        "$\\pi/2$"
+      ],
+      "answer": 1,
+      "explain": "上半平面极点 $z=i$，留数 $1/(2i)$；大圆弧上界 $\\pi/R\\to0$，积分 $=2\\pi i\\cdot1/(2i)=\\pi$。",
+      "relatedConceptId": "c404",
+      "_added": true
+    },
+    {
+      "id": "q53",
+      "chapterId": "ch04",
+      "type": "single",
+      "question": "辐角原理 $\\frac{1}{2\\pi i}\\oint_C\\frac{f'(z)}{f(z)}dz$ 等于：",
+      "options": [
+        "$N+P$",
+        "$P-N$",
+        "$N-P$"
+      ],
+      "answer": 2,
+      "explain": "$N$ 是围道内零点个数（按重数），$P$ 是极点个数（按阶数），结果为零点数减极点数；不是单纯数极点。",
+      "relatedConceptId": "c405",
+      "_added": true
+    },
+    {
+      "id": "q54",
+      "chapterId": "ch05",
+      "type": "single",
+      "question": "矩形脉冲 $f(x)=1$（$|x|<1$，外面为 0）的傅里叶变换 $F(k)$ 是：",
+      "options": [
+        "$\\dfrac{2\\sin k}{k}$",
+        "$\\dfrac{2\\cos k}{k}$",
+        "$\\dfrac{\\sin k}{k^2}$",
+        "$2\\pi\\delta(k)$"
+      ],
+      "answer": 0,
+      "explain": "积分限 $[-1,1]$：$F(k)=\\int_{-1}^{1}e^{-ikx}dx=\\dfrac{e^{ik}-e^{-ik}}{ik}=\\dfrac{2\\sin k}{k}$。$k=0$ 时极限为 2，等于脉冲面积。余弦选项来自把积分误凑成实部，$\\delta(k)$ 是常数函数的变换，不是脉冲。",
+      "relatedConceptId": "c502",
+      "_added": true
+    },
+    {
+      "id": "q55",
+      "chapterId": "ch05",
+      "type": "single",
+      "question": "已知 $f(x)$ 的频谱为 $F(k)$，则平移后的 $g(x)=f(x-3)$ 的频谱是：",
+      "options": [
+        "$e^{-3ik}F(k)$",
+        "$e^{3ik}F(k)$",
+        "$\\dfrac{1}{3}F(k/3)$",
+        "$3F(3k)$"
+      ],
+      "answer": 0,
+      "explain": "位移性质：$f(x-x_0)\\leftrightarrow e^{-ikx_0}F(k)$，$x_0=3$。相位因子模长为 1，幅度谱不变。$e^{3ik}$ 是平移方向写反；后两项是缩放性质，与本题无关。",
+      "relatedConceptId": "c503",
+      "_added": true
+    },
+    {
+      "id": "q56",
+      "chapterId": "ch05",
+      "type": "single",
+      "question": "卷积 $(f*g)(x)=\\int f(\\xi)g(x-\\xi)d\\xi$ 的傅里叶变换是：",
+      "options": [
+        "$F(k)G(k)$",
+        "$F(k)/G(k)$",
+        "$F(k)+G(k)$",
+        "$\\dfrac{F(k)G(k)}{2\\pi}$"
+      ],
+      "answer": 0,
+      "explain": "卷积定理：时域卷积对应频域乘积 $F(k)G(k)$。$1/(2\\pi)$ 只出现在逆变换归一，卷积定理两边都不带它；逐点相乘留在频域，与时域卷积不要混。",
+      "relatedConceptId": "c503",
+      "_added": true
+    },
+    {
+      "id": "q57",
+      "chapterId": "ch05",
+      "type": "single",
+      "question": "筛选积分 $\\int_{-\\infty}^{\\infty}\\delta(x-2)x^2\\,dx$ 的结果是：",
+      "options": [
+        "$4$",
+        "$2$",
+        "$0$",
+        "$\\dfrac12$"
+      ],
+      "answer": 0,
+      "explain": "筛选性质：$\\int\\delta(x-x_0)\\phi(x)dx=\\phi(x_0)$，取 $x_0=2$、$\\phi(x)=x^2$，得 $2^2=4$。$\\delta$ 不取函数值，结果由被积函数在取值点决定。",
+      "relatedConceptId": "c504",
+      "_added": true
+    },
+    {
+      "id": "q58",
+      "chapterId": "ch05",
+      "type": "single",
+      "question": "一维热传导 $u_t=a^2u_{xx}$、初值 $f(x)$，对 $x$ 做傅里叶变换后，频域解 $U(k,t)$ 是：",
+      "options": [
+        "$U_0(k)e^{-a^2k^2t}$",
+        "$U_0(k)e^{a^2k^2t}$",
+        "$U_0(k)\\cos(akt)$",
+        "$\\dfrac{U_0(k)}{1+a^2k^2t}$"
+      ],
+      "answer": 0,
+      "explain": "$u_{xx}\\leftrightarrow -k^2U$，频域方程 $U_t=-a^2k^2U$，解为 $U=U_0e^{-a^2k^2t}$。逆变换是初值与高斯核的卷积。增长指数方向反了；$\\cos(akt)$ 是波动方程的时间因子。",
+      "relatedConceptId": "c505",
+      "_added": true
+    },
+    {
+      "id": "q59",
+      "chapterId": "ch05",
+      "type": "single",
+      "question": "$f(x)=\\sin x$ 在 $(-\\pi,\\pi)$ 上展开傅里叶级数，正弦系数 $b_1$ 是：",
+      "options": [
+        "$1$",
+        "$0$",
+        "$\\dfrac{2}{\\pi}$",
+        "$-1$"
+      ],
+      "answer": 0,
+      "explain": "$f$ 本身就是第一号正弦成分，$b_1=\\frac1\\pi\\int_{-\\pi}^{\\pi}\\sin^2x\\,dx=1$，其余系数由正交性为零。",
+      "relatedConceptId": "c501",
+      "_added": true
+    },
+    {
+      "id": "q60",
+      "chapterId": "ch06",
+      "type": "single",
+      "question": "$f(t)=e^{2t}$ 的拉普拉斯变换及其收敛域是：",
+      "options": [
+        "$\\dfrac{1}{s-2}$，$\\operatorname{Re}s>2$",
+        "$\\dfrac{1}{s+2}$，$\\operatorname{Re}s>-2$",
+        "$\\dfrac{1}{s^2+4}$",
+        "$\\dfrac{2}{s^2}$"
+      ],
+      "answer": 0,
+      "explain": "$\\int_0^\\infty e^{2t}e^{-st}dt=1/(s-2)$，收敛要求 $\\operatorname{Re}(s-2)>0$。$1/(s+2)$ 对应 $e^{-2t}$；后两项分别是三角、幂次变换对。",
+      "relatedConceptId": "c601",
+      "_added": true
+    },
+    {
+      "id": "q61",
+      "chapterId": "ch06",
+      "type": "single",
+      "question": "二阶导数的拉普拉斯变换 $\\mathcal L[f'']$ 是：",
+      "options": [
+        "$s^2F(s)-sf(0)-f'(0)$",
+        "$s^2F(s)-f(0)$",
+        "$sF(s)-f(0)$",
+        "$s^2F(s)$"
+      ],
+      "answer": 0,
+      "explain": "两次导数性质：$\\mathcal L[f'']=s^2F-sf(0)-f'(0)$，$f(0)$、$f'(0)$ 两项都进分子。漏掉初值项，变换后对应另一个初值问题。",
+      "relatedConceptId": "c602",
+      "_added": true
+    },
+    {
+      "id": "q62",
+      "chapterId": "ch06",
+      "type": "single",
+      "question": "$Y(s)=1/(s+1)^2$ 的逆变换是：",
+      "options": [
+        "$te^{-t}$",
+        "$e^{-t}$",
+        "$t^2e^{-t}$",
+        "$e^{-2t}$"
+      ],
+      "answer": 0,
+      "explain": "二阶极点 $s=-1$ 对应 $t^{m-1}e^{at}$，$m=2$、$a=-1$，得 $te^{-t}$。一阶极点才给 $e^{-t}$；重极点不能只拆成 $A/(s+1)$。",
+      "relatedConceptId": "c603",
+      "_added": true
+    },
+    {
+      "id": "q63",
+      "chapterId": "ch06",
+      "type": "single",
+      "question": "解 $y''+3y'+2y=0$、$y(0)=1$、$y'(0)=0$，变换后 $Y(s)$ 是：",
+      "options": [
+        "$\\dfrac{s+3}{(s+1)(s+2)}$",
+        "$\\dfrac{1}{(s+1)(s+2)}$",
+        "$\\dfrac{s+1}{(s+1)(s+2)}$",
+        "$\\dfrac{s+3}{s^2+3s}$"
+      ],
+      "answer": 0,
+      "explain": "代入导数性质得 $(s^2+3s+2)Y-s-3=0$，故 $Y=(s+3)/((s+1)(s+2))$。逆变换为 $2e^{-t}-e^{-2t}$，核对 $y(0)=1$、$y'(0)=0$。",
+      "relatedConceptId": "c604",
+      "_added": true
+    },
+    {
+      "id": "q64",
+      "chapterId": "ch06",
+      "type": "single",
+      "question": "$\\mathcal L[\\sin\\omega t]$ 等于：",
+      "options": [
+        "$\\dfrac{\\omega}{s^2+\\omega^2}$",
+        "$\\dfrac{s}{s^2+\\omega^2}$",
+        "$\\dfrac{1}{s-\\omega}$",
+        "$\\dfrac{\\omega}{s^2-\\omega^2}$"
+      ],
+      "answer": 0,
+      "explain": "由 $\\sin\\omega t=(e^{i\\omega t}-e^{-i\\omega t})/(2i)$ 线性组合得 $\\omega/(s^2+\\omega^2)$。$s/(s^2+\\omega^2)$ 是余弦；$s^2-\\omega^2$ 对应双曲函数。",
+      "relatedConceptId": "c602",
+      "_added": true
+    },
+    {
+      "id": "q65",
+      "chapterId": "ch07",
+      "type": "single",
+      "question": "$u_{tt}=4u_{xx}$ 属于哪类方程，波速 $a$ 是多少？",
+      "options": [
+        "波动方程，$a=2$",
+        "热传导方程，$a^2=4$",
+        "拉普拉斯方程",
+        "波动方程，$a=4$"
+      ],
+      "answer": 0,
+      "explain": "对时间二阶导数是波动型标志，$a^2=4$，故 $a=2$。热传导方程只带 $u_t$；拉普拉斯方程不含时间导数。",
+      "relatedConceptId": "c701",
+      "_added": true
+    },
+    {
+      "id": "q66",
+      "chapterId": "ch07",
+      "type": "single",
+      "question": "一维热传导初值问题应该给几个初始条件？",
+      "options": [
+        "1 个",
+        "2 个",
+        "0 个",
+        "3 个"
+      ],
+      "answer": 0,
+      "explain": "方程对时间一阶，只要初始温度 $u(x,0)=f(x)$。再补一个速度类条件会与一阶方程矛盾；波动方程才需要位移、速度两个。",
+      "relatedConceptId": "c702",
+      "_added": true
+    },
+    {
+      "id": "q67",
+      "chapterId": "ch07",
+      "type": "single",
+      "question": "弦的一端横向自由，该端边界条件属于哪一类，形式是？",
+      "options": [
+        "Neumann，$u_x(l,t)=0$",
+        "Dirichlet，$u(l,t)=0$",
+        "Robin，$\\alpha u+\\beta u_x=0$",
+        "周期性条件"
+      ],
+      "answer": 0,
+      "explain": "自由端横向受力为零，小振幅下等价于斜率为零，约束法向导数，是 Neumann 条件。Dirichlet 约束位移值；Robin 是值与导数的组合。",
+      "relatedConceptId": "c702",
+      "_added": true
+    },
+    {
+      "id": "q68",
+      "chapterId": "ch07",
+      "type": "single",
+      "question": "非齐次边界 $u(0,t)=g(t)$、$u(l,t)=0$ 齐次化时，辅助函数 $w$ 可取：",
+      "options": [
+        "$w=g(t)(1-x/l)$ 这类线性函数",
+        "$w=0$",
+        "$w=f(x)$",
+        "$w=e^x$"
+      ],
+      "answer": 0,
+      "explain": "选 $w$ 满足非齐次边界，令 $u=v+w$，则 $v$ 带齐次边界。$w$ 不必满足方程，代回后残差项要和源项一起处理。",
+      "relatedConceptId": "c703",
+      "_added": true
+    },
+    {
+      "id": "q69",
+      "chapterId": "ch07",
+      "type": "single",
+      "question": "定解问题适定性的三条要求是：",
+      "options": [
+        "存在、唯一、稳定",
+        "连续、可微、可积",
+        "对称、正定、有界",
+        "线性、齐次、可分离"
+      ],
+      "answer": 0,
+      "explain": "适定性指解存在、解唯一、解连续依赖数据。稳定性保证数据小扰动只引起解小偏差；其余三组是代数或分析性质，不是适定性标准。",
+      "relatedConceptId": "c704",
+      "_added": true
+    },
+    {
+      "id": "q70",
+      "chapterId": "ch08",
+      "type": "single",
+      "question": "两端固定 $X(0)=X(l)=0$ 的本征值与本征函数是：",
+      "options": [
+        "$\\lambda_n=(n\\pi/l)^2$，$X_n=\\sin(n\\pi x/l)$",
+        "$\\lambda_n=(n\\pi/l)^2$，$X_n=\\cos(n\\pi x/l)$",
+        "$\\lambda_n=((n+\\tfrac12)\\pi/l)^2$，半周期正弦",
+        "$\\lambda_n=n^2\\pi$，$X_n=x^n$"
+      ],
+      "answer": 0,
+      "explain": "Dirichlet 边界挑出正弦序列；余弦是 Neumann 序列，半整数波数是混合边界，多项式不是该方程的解。",
+      "relatedConceptId": "c802",
+      "_added": true
+    },
+    {
+      "id": "q71",
+      "chapterId": "ch08",
+      "type": "single",
+      "question": "Neumann 边界 $X'(0)=X'(l)=0$ 的零模是：",
+      "options": [
+        "没有零模，$\\lambda$ 全为正",
+        "$\\lambda_0=0$，$X_0=1$（常数）",
+        "$\\lambda_0=\\pi^2/l^2$，$X_0=x$",
+        "$\\lambda_0=-1$，$X_0=e^x$"
+      ],
+      "answer": 1,
+      "explain": "常数函数导数处处为零，满足 Neumann 边界，是合法非零解，对应 $\\lambda_0=0$。Dirichlet 边界下常数两端不为零，零模缺失。",
+      "relatedConceptId": "c802",
+      "_added": true
+    },
+    {
+      "id": "q72",
+      "chapterId": "ch08",
+      "type": "single",
+      "question": "本征展开系数 $c_m=\\int fX_m\\,dx/\\int X_m^2\\,dx$ 里，分母是：",
+      "options": [
+        "$2\\pi$",
+        "$l^2$",
+        "模长平方 $\\int X_m^2\\,dx$",
+        "本征值 $\\lambda_m$"
+      ],
+      "answer": 2,
+      "explain": "两边乘 $X_m$ 积分后正交性消去其余模态，留下 $c_m$ 乘模长平方。正弦、余弦模长平方为 $l/2$，常数零模为 $l$。",
+      "relatedConceptId": "c804",
+      "_added": true
+    },
+    {
+      "id": "q73",
+      "chapterId": "ch08",
+      "type": "single",
+      "question": "分离变量法第一步对解做的假设是：",
+      "options": [
+        "$u(x,t)=X(x)T(t)$",
+        "$u=e^{kx}$",
+        "$u=\\sum a_nx^n$",
+        "$u=f(x)+g(t)$"
+      ],
+      "answer": 0,
+      "explain": "设乘积解 $u=XT$，代入后除以 $XT$ 把空间、时间分开，令比值为分离常数。加和形式不是乘积假设；指数、幂级数是另外的解法。",
+      "relatedConceptId": "c801",
+      "_added": true
+    },
+    {
+      "id": "q74",
+      "chapterId": "ch08",
+      "type": "single",
+      "question": "直角坐标二维分离 $u=X(x)Y(y)T(t)$，各方向分离常数满足：",
+      "options": [
+        "三者互不相关，可独立取值",
+        "$\\lambda=\\mu+\\nu$",
+        "$\\lambda=\\mu\\nu$",
+        "$\\lambda=\\mu-\\nu$"
+      ],
+      "answer": 1,
+      "explain": "代回原方程，总本征值等于两个空间方向本征值相加 $\\lambda=\\mu+\\nu$。不满足这个约束的常数组合配不平原方程。",
+      "relatedConceptId": "c805",
+      "_added": true
+    },
+    {
+      "id": "q75",
+      "chapterId": "ch08",
+      "type": "single",
+      "question": "非齐次方程源项 $f(x,t)$ 按本征函数展开后，模态系数 $f_n(t)$ 的特点是：",
+      "options": [
+        "随时间变化，每个模态要解一个受迫常微分方程",
+        "是与时间无关的常数",
+        "等于初始温度",
+        "只含空间坐标"
+      ],
+      "answer": 0,
+      "explain": "$f_n(t)$ 由源项对 $X_n$ 积分得到，一般随时间变；波动模态解 $T_n''+a^2\\lambda_nT_n=f_n(t)$，热传导模态解 $T_n'+a^2\\lambda_nT_n=f_n(t)$。",
+      "relatedConceptId": "c803",
+      "_added": true
+    },
+    {
+      "id": "q76",
+      "chapterId": "ch09",
+      "type": "single",
+      "question": "达朗贝尔公式中，初始速度 $\\psi(s)$ 对应积分项的系数是：",
+      "options": [
+        "$\\frac{1}{2a}$",
+        "$\\frac{1}{a}$",
+        "$\\frac{1}{2a^2}$"
+      ],
+      "answer": 0,
+      "explain": "速度条件联立通解时，$F'$ 与 $G'$ 各带一个 $1/a$，合成 $1/(2a)$。漏了这个因子，初速度贡献整体大一倍；$1/(2a^2)$ 是误把波速平方也带进了系数。",
+      "relatedConceptId": "c901",
+      "_added": true
+    },
+    {
+      "id": "q77",
+      "chapterId": "ch09",
+      "type": "single",
+      "question": "全无界弦 $a=1$，$u(x,0)=0$，$u_t(x,0)=2$，解 $u(x,t)$ 等于：",
+      "options": [
+        "$2t$",
+        "$t$",
+        "$2x$"
+      ],
+      "answer": 0,
+      "explain": "位移项为零，$u=\\frac12\\int_{x-t}^{x+t}2\\,ds=\\frac12\\cdot2\\cdot2t=2t$。代入 $u_{tt}=0=u_{xx}$，$u_t=2$，与初速度一致。$t$ 少乘了 2，$2x$ 与时间演化无关。",
+      "relatedConceptId": "c901",
+      "_added": true
+    },
+    {
+      "id": "q78",
+      "chapterId": "ch09",
+      "type": "single",
+      "question": "波动方程 $a=2$，点 $(x,t)=(5,3)$ 的依赖区间与长度是：",
+      "options": [
+        "$[-1,11]$，长度 $12$",
+        "$[-6,6]$，长度 $12$",
+        "$[-1,11]$，长度 $6$"
+      ],
+      "answer": 0,
+      "explain": "依赖区间为 $[x-at,x+at]=[5-6,5+6]=[-1,11]$，长度 $2at=2\\cdot2\\cdot3=12$。$[-6,6]$ 是初始点 $x_0=0$ 在 $t=3$ 的影响范围，不是依赖区间。",
+      "relatedConceptId": "c902",
+      "_added": true
+    },
+    {
+      "id": "q79",
+      "chapterId": "ch09",
+      "type": "single",
+      "question": "半无界弦固定端 $u(0,t)=0$，初始数据应做哪种延拓？",
+      "options": [
+        "奇延拓，反射波反号",
+        "偶延拓，反射波同号",
+        "不需要延拓，直接套公式"
+      ],
+      "answer": 0,
+      "explain": "固定端要求端点位移为零，奇函数在原点取值为零，自动满足 $u(0,t)=0$，反射波反号。偶延拓配自由端 $u_x(0,t)=0$；不延拓直接套用会让边界条件落空。",
+      "relatedConceptId": "c903",
+      "_added": true
+    },
+    {
+      "id": "q80",
+      "chapterId": "ch09",
+      "type": "single",
+      "question": "半无界热传导问题做正弦变换，对应的边界类型是：",
+      "options": [
+        "Dirichlet 边界 $u(0,t)=0$",
+        "Neumann 边界 $u_x(0,t)=0$",
+        "任意非齐次边界"
+      ],
+      "answer": 0,
+      "explain": "正弦函数在 $x=0$ 处为零，配 Dirichlet 边界；余弦函数在原点导数为零，配 Neumann 边界。变换选择由边界条件类型决定，不能互换。",
+      "relatedConceptId": "c904",
+      "_added": true
+    },
+    {
+      "id": "q81",
+      "chapterId": "ch10",
+      "type": "single",
+      "question": "三维泊松方程 $-\\Delta G=\\delta(\\mathbf r-\\mathbf r_0)$ 的基本解是：",
+      "options": [
+        "$G_0=\\frac{1}{4\\pi r}$，$r=\\lvert\\mathbf r-\\mathbf r_0\\rvert$",
+        "$G_0=\\frac{1}{2\\pi}\\ln r$",
+        "$G_0=\\frac{\\lvert x-x_0\\rvert}{2}$"
+      ],
+      "answer": 0,
+      "explain": "三维球对称响应通量配平给出 $1/(4\\pi r)$。$1/(2\\pi)\\ln r$ 是二维基本解，$\\lvert x-x_0\\rvert/2$ 是一维形式，维度不同不能混用。",
+      "relatedConceptId": "c1001",
+      "_added": true
+    },
+    {
+      "id": "q82",
+      "chapterId": "ch10",
+      "type": "single",
+      "question": "接地平面 $z=0$ 上方 $z_0$ 处有单位点源，镜像源的位置与符号是：",
+      "options": [
+        "位于 $(0,0,-z_0)$，电量相反",
+        "位于 $(0,0,-z_0)$，电量相同",
+        "位于 $(0,0,z_0)$，电量相反"
+      ],
+      "answer": 0,
+      "explain": "对称位置保证平面上两点距离相等，异号保证两项相减为零，满足接地条件。同号会在平面留下两倍电位；位置放同侧不构成镜像。",
+      "relatedConceptId": "c1002",
+      "_added": true
+    },
+    {
+      "id": "q83",
+      "chapterId": "ch10",
+      "type": "single",
+      "question": "接地球面 $R=1$，源在距球心 $a=2$ 处，镜像电量与镜像位置分别是：",
+      "options": [
+        "$q'=-0.5$，$b=0.5$",
+        "$q'=0.5$，$b=0.5$",
+        "$q'=-0.5$，$b=2$"
+      ],
+      "answer": 0,
+      "explain": "反演点 $b=R^2/a=0.5$，镜像电量 $q'=-R/a=-0.5$。在球面 $\\theta=0,\\pi,\\pi/2$ 三个方向核对，电位均为零。同号不满足接地；$b=2$ 不在反演位置。",
+      "relatedConceptId": "c1002",
+      "_added": true
+    },
+    {
+      "id": "q84",
+      "chapterId": "ch10",
+      "type": "single",
+      "question": "波动格林函数中 $\\delta(t-t_0-r/a)$ 表示的因果关系是：",
+      "options": [
+        "$t_0$ 时刻的扰动经 $r/a$ 时间后在 $t=t_0+r/a$ 到达场点",
+        "场点在 $t=t_0-r/a$ 先于源被激发",
+        "扰动瞬时到达场点"
+      ],
+      "answer": 0,
+      "explain": "$r/a$ 是传播时间，$t-r/a$ 是源被激发的时刻。写成 $t+r/a$ 得到超前解，违反因果；瞬时传播是抛物型方程的行为，不是波动方程。",
+      "relatedConceptId": "c1003",
+      "_added": true
+    },
+    {
+      "id": "q85",
+      "chapterId": "ch10",
+      "type": "single",
+      "question": "本征展开 $G=\\sum_n\\frac{\\varphi_n(r)\\varphi_n(r_0)}{\\lambda_n}$ 中，分母本征值 $\\lambda_n$ 越小说明：",
+      "options": [
+        "该模态在格林函数中的贡献越大",
+        "该模态在格林函数中的贡献越小",
+        "与模态贡献无关"
+      ],
+      "answer": 0,
+      "explain": "逐项匹配 $-\\Delta\\varphi_n=\\lambda_n\\varphi_n$，系数为 $1/\\lambda_n$；$\\lambda_n$ 小则 $1/\\lambda_n$ 大，模态分量更重。展开基必须对应齐次边界。",
+      "relatedConceptId": "c1004",
+      "_added": true
+    },
+    {
+      "id": "q86",
+      "chapterId": "ch11",
+      "type": "single",
+      "question": "$P_2(x)$ 等于：",
+      "options": [
+        "$\\frac{3x^2-1}{2}$",
+        "$\\frac{5x^3-3x}{2}$",
+        "$x$"
+      ],
+      "answer": 0,
+      "explain": "罗德里格斯公式：$(x^2-1)^2=x^4-2x^2+1$，二阶导数 $12x^2-4$，除以 $2^2\\cdot2!=8$ 得 $(3x^2-1)/2$。$(5x^3-3x)/2$ 是 $P_3$，$x$ 是 $P_1$。",
+      "relatedConceptId": "c1102",
+      "_added": true
+    },
+    {
+      "id": "q87",
+      "chapterId": "ch11",
+      "type": "single",
+      "question": "球坐标分离变量中 $l$ 被筛成非负整数的原因是：",
+      "options": [
+        "解在 $\\theta=0,\\pi$ 极点处要有界",
+        "径向方程要求 $l$ 为整数",
+        "方位角周期条件要求 $l$ 为整数"
+      ],
+      "answer": 0,
+      "explain": "$l$ 一开始是连续参数；幂级数在端点发散，有界条件要求级数截断，$k=l$ 时递推分子为零，$l$ 才被筛成非负整数。方位角周期条件约束的是 $m$，不是 $l$。",
+      "relatedConceptId": "c1101",
+      "_added": true
+    },
+    {
+      "id": "q88",
+      "chapterId": "ch11",
+      "type": "single",
+      "question": "积分 $\\int_{-1}^{1}P_1(x)P_2(x)\\,dx$ 等于：",
+      "options": [
+        "$0$",
+        "$2/3$",
+        "$2/5$"
+      ],
+      "answer": 0,
+      "explain": "$P_1=x$ 是奇函数，$P_2=(3x^2-1)/2$ 是偶函数，乘积为奇函数，对称区间 $[-1,1]$ 上积分为零，符合正交性。$2/3$ 是 $\\int P_1^2dx$，$2/5$ 是 $\\int P_2^2dx$。",
+      "relatedConceptId": "c1103",
+      "_added": true
+    },
+    {
+      "id": "q89",
+      "chapterId": "ch11",
+      "type": "single",
+      "question": "球面边界 $f(\\theta)=1+\\cos\\theta$ 展开成 $P_l$ 级数，前两项系数是：",
+      "options": [
+        "$c_0=1$，$c_1=1$",
+        "$c_0=1/2$，$c_1=3/2$",
+        "$c_0=0$，$c_1=1$"
+      ],
+      "answer": 0,
+      "explain": "$1=P_0$，$\\cos\\theta=P_1$，直接对照得 $c_0=1$、$c_1=1$。用积分核对：$c_0=\\frac12\\int f\\,dx=1$，$c_1=\\frac32\\int fP_1dx=1$，其余系数为零。",
+      "relatedConceptId": "c1103",
+      "_added": true
+    },
+    {
+      "id": "q90",
+      "chapterId": "ch11",
+      "type": "single",
+      "question": "球谐函数 $Y_{lm}$ 中 $m$ 的取值范围与每层个数是：",
+      "options": [
+        "$-l\\le m\\le l$，每层 $2l+1$ 个",
+        "$0\\le m\\le l$，每层 $l+1$ 个",
+        "$-l\\le m\\le l$，每层 $l$ 个"
+      ],
+      "answer": 0,
+      "explain": "方位角周期条件给出整数 $m$，连带勒让德函数要求 $\\lvert m\\rvert\\le l$，所以 $m=-l,-l+1,\\dots,l$，共 $2l+1$ 个。只取非负 $m$ 会丢掉一半基函数。",
+      "relatedConceptId": "c1104",
+      "_added": true
+    },
+    {
+      "id": "q91",
+      "chapterId": "ch12",
+      "type": "single",
+      "question": "柱坐标亥姆霍兹方程分离变量后，$m$ 阶径向方程的标准形式是：",
+      "options": [
+        "$x^2R''+xR'+(x^2-m^2)R=0$",
+        "$x^2R''+xR'-(x^2+m^2)R=0$",
+        "$x^2R''-xR'+(x^2-m^2)R=0"
+      ],
+      "answer": 0,
+      "explain": "尺度替换 $x=\\mu r$ 后得到贝塞尔方程 $x^2R''+xR'+(x^2-m^2)R=0$。选项 B 是修正贝塞尔方程（平方项变号），选项 C 漏掉了径向一阶项的正号。",
+      "relatedConceptId": "c1201",
+      "_added": true
+    },
+    {
+      "id": "q92",
+      "chapterId": "ch12",
+      "type": "single",
+      "question": "用 $J_0(x)$ 级数前四项计算 $J_0(1)$，结果约为：",
+      "options": [
+        "$0.7652$",
+        "$0.9385$",
+        "$1.2661"
+      ],
+      "answer": 0,
+      "explain": "$J_0(1)=1-1/4+1/64-1/2304\\approx0.76519$。$0.9385$ 是 $J_0(0.5)$，$1.2661$ 是修正贝塞尔 $I_0(1)$，两者都不是零阶普通贝塞尔在 $x=1$ 的值。",
+      "relatedConceptId": "c1202",
+      "_added": true
+    },
+    {
+      "id": "q93",
+      "chapterId": "ch12",
+      "type": "single",
+      "question": "半径 $a=1$ 的圆盘把 $f(r)=1$ 按 $J_0(\\alpha_m r)$ 展开，第一个零点 $\\alpha_1=2.4048$、$J_1(\\alpha_1)=0.51915$，第一项系数 $c_1$ 约为：",
+      "options": [
+        "$1.6020$",
+        "$-1.0648$",
+        "$0.51915"
+      ],
+      "answer": 0,
+      "explain": "$c_1=2/[\\alpha_1J_1(\\alpha_1)]=2/(2.4048\\cdot0.51915)\\approx1.6020$。$-1.0648$ 是第二项系数 $c_2$，$0.51915$ 只是查表的 $J_1$ 值，没除模数。",
+      "relatedConceptId": "c1203",
+      "_added": true
+    },
+    {
+      "id": "q94",
+      "chapterId": "ch12",
+      "type": "single",
+      "question": "圆盘边缘绝热（$u_r(1)=0$）的轴对称问题，径向函数应取哪一类零点？",
+      "options": [
+        "$J_0(x)$ 的函数零点",
+        "$J_0'(x)=0$ 的导数零点，由 $J_0'=-J_1$ 即 $J_1(x)$ 的零点",
+        "$J_1(x)$ 的函数零点以外的任意根"
+      ],
+      "answer": 1,
+      "explain": "诺伊曼边界对应导数为零。由递推 $J_0'=-J_1$，导数零点就是 $J_1(x)=0$ 的根；$J_0$ 的函数零点配的是 $u(1)=0$ 的狄利克雷边界。",
+      "relatedConceptId": "c1203",
+      "_added": true
+    },
+    {
+      "id": "q95",
+      "chapterId": "ch12",
+      "type": "single",
+      "question": "球贝塞尔零阶 $j_0(x)=\\sin x/x$，$j_0(\\pi/2)$ 等于：",
+      "options": [
+        "$2/\\pi\\approx0.6366$",
+        "$4/\\pi^2\\approx0.4053$",
+        "$1$"
+      ],
+      "answer": 0,
+      "explain": "$j_0(\\pi/2)=\\sin(\\pi/2)/(\\pi/2)=2/\\pi\\approx0.6366$。$0.4053$ 是一阶球贝塞尔 $j_1(\\pi/2)$，$1$ 是 $x\\to0$ 的极限值。",
+      "relatedConceptId": "c1204",
+      "_added": true
+    },
+    {
+      "id": "q96",
+      "chapterId": "ch13",
+      "type": "single",
+      "question": "弧长泛函 $L[y]=\\int_0^1\\sqrt{1+y'^2}\\,dx$ 的自变量是：",
+      "options": [
+        "一条曲线 $y(x)$",
+        "区间里的一个点 $x$",
+        "曲线的斜率 $y'$"
+      ],
+      "answer": 0,
+      "explain": "泛函输入整条曲线、输出一个数；点和斜率只是被积函数里的局部信息，不构成泛函的自变量。",
+      "relatedConceptId": "c1301",
+      "_added": true
+    },
+    {
+      "id": "q97",
+      "chapterId": "ch13",
+      "type": "single",
+      "question": "泛函 $J[y]=\\int_0^1(y'^2+y)\\,dx$ 的欧拉–拉格朗日方程是：",
+      "options": [
+        "$2y''-1=0$",
+        "$2y''+1=0$",
+        "$y''-y=0"
+      ],
+      "answer": 0,
+      "explain": "$F=y'^2+y$，$F_{y'}=2y'$，$\\frac{d}{dx}F_{y'}=2y''$，$F_y=1$，代入得 $2y''-1=0$。选项 B 把 $F_y$ 符号写反，选项 C 对应 $F=y'^2+y^2$ 一类泛函。",
+      "relatedConceptId": "c1302",
+      "_added": true
+    },
+    {
+      "id": "q98",
+      "chapterId": "ch13",
+      "type": "single",
+      "question": "$F=y\\sqrt{1+y'^2}$ 不显含 $x$，应使用哪条首次积分？",
+      "options": [
+        "$F-y'F_{y'}=C$（贝尔特拉米恒等式）",
+        "$F_{y'}=C$",
+        "$F_y=C$"
+      ],
+      "answer": 0,
+      "explain": "不显含 $x$ 用贝尔特拉米恒等式 $F-y'F_{y'}=C$；$F_{y'}=C$ 对应不显含 $y$ 的情形。$F_y=C$ 不是变分法的标准首次积分。",
+      "relatedConceptId": "c1302",
+      "_added": true
+    },
+    {
+      "id": "q99",
+      "chapterId": "ch13",
+      "type": "single",
+      "question": "单摆 $L=\\tfrac12ml^2\\dot\\theta^2+mgl\\cos\\theta$ 导出的运动方程是：",
+      "options": [
+        "$\\ddot\\theta+\\frac{g}{l}\\sin\\theta=0$",
+        "$\\ddot\\theta-\\frac{g}{l}\\sin\\theta=0$",
+        "$\\ddot\\theta+\\frac{l}{g}\\sin\\theta=0"
+      ],
+      "answer": 0,
+      "explain": "$\\partial L/\\partial\\dot\\theta=ml^2\\dot\\theta$，全导得 $ml^2\\ddot\\theta$；$\\partial L/\\partial\\theta=-mgl\\sin\\theta$，整理得 $\\ddot\\theta+(g/l)\\sin\\theta=0$。选项 B 符号反，选项 C 把 $g/l$ 写成 $l/g$。",
+      "relatedConceptId": "c1303",
+      "_added": true
+    },
+    {
+      "id": "q100",
+      "chapterId": "ch13",
+      "type": "single",
+      "question": "弦本征值问题 $-u''=\\lambda u$、$u(0)=u(1)=0$，取试探函数 $u=cx(1-x)$，瑞利商为：",
+      "options": [
+        "$10$",
+        "$\\pi^2\\approx9.8696$",
+        "$1/30$"
+      ],
+      "answer": 0,
+      "explain": "$\\int u'^2dx=c^2/3$，$\\int u^2dx=c^2/30$，商为 $(1/3)/(1/30)=10$。$\\pi^2\\approx9.8696$ 是真值第一本征值，$1/30$ 只是分母积分值。",
+      "relatedConceptId": "c1304",
+      "_added": true
     }
   ],
   "flashcards": [
@@ -2419,6 +3527,864 @@
         "近似",
         "ch13"
       ]
+    },
+    {
+      "id": "f43",
+      "chapterId": "ch00",
+      "front": "重根时为什么要乘一个 $t$？",
+      "back": "单根只给一个指数解，二阶方程需要两个线性无关解；乘 $t$ 得到 $te^{\\lambda t}$，与 $e^{\\lambda t}$ 线性无关，把缺的那一维补回来。",
+      "tags": [
+        "常微分",
+        "ch00"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f44",
+      "chapterId": "ch00",
+      "front": "全微分 $du$ 的公式，以及它漏掉了什么？",
+      "back": "$du=u_x\\,dx+u_t\\,dt$。它是一阶线性主部，漏掉的是二阶及更高阶小量；步长越小误差越小。",
+      "tags": [
+        "偏导",
+        "ch00"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f45",
+      "chapterId": "ch00",
+      "front": "幂级数收敛半径的比值法公式？",
+      "back": "$R=\\lim_{n\\to\\infty}\\lvert a_n/a_{n+1}\\rvert$。只看系数增长速度，不看项数。",
+      "tags": [
+        "级数",
+        "ch00"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f46",
+      "chapterId": "ch00",
+      "front": "$u=f(x-at)$ 的 $u_{tt}$ 与 $u_{xx}$ 是什么关系？",
+      "back": "$u_{tt}=a^2u_{xx}$。每次对 $t$ 求导掉一个 $-a$，两次相乘得 $+a^2$。",
+      "tags": [
+        "链式法则",
+        "波动方程"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f47",
+      "chapterId": "ch00",
+      "front": "偏导 $u_t$ 和全导 $du/dt$ 差在哪？",
+      "back": "$u_t$ 只在 $x$ 冻住时成立；若 $x=x(t)$ 也在动，$du/dt=u_x\\dot x+u_t$，多一项对流项。",
+      "tags": [
+        "偏导",
+        "ch00"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f48",
+      "chapterId": "ch00",
+      "front": "球坐标的 $\\Delta u$ 为什么不能直接把 $x,y,z$ 换成 $r,\\theta,\\varphi$？",
+      "back": "要带度量因子：$\\frac{1}{r^2}\\partial_r(r^2\\partial_r u)+\\frac{1}{r^2\\sin\\theta}\\partial_\\theta(\\sin\\theta\\,\\partial_\\theta u)+\\frac{1}{r^2\\sin^2\\theta}\\partial^2_\\varphi u$。漏掉 $\\sin\\theta$ 会把 $1/r$ 错算成不调和。",
+      "tags": [
+        "矢量分析",
+        "球坐标"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f49",
+      "chapterId": "ch01",
+      "front": "复数乘法在指数式下的两条规则？",
+      "back": "模相乘、辐角相加；除法反过来，模相除、辐角相减。",
+      "tags": [
+        "复数运算",
+        "ch01"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f50",
+      "chapterId": "ch01",
+      "front": "$\\arg z$ 与 $\\mathrm{Arg}\\,z$ 有什么区别？",
+      "back": "$\\arg z$ 多值，彼此差 $2\\pi$ 的整数倍；$\\mathrm{Arg}\\,z$ 是落在 $(-\\pi,\\pi]$ 内的辐角主值。",
+      "tags": [
+        "辐角",
+        "ch01"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f51",
+      "chapterId": "ch01",
+      "front": "复变函数极限存在对趋近路径有什么要求？",
+      "back": "沿任意方向、任意路径趋近 $z_0$，$f(z)$ 都趋于同一个复数；找到两条给出不同值的路径即可否定极限。",
+      "tags": [
+        "极限",
+        "ch01"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f52",
+      "chapterId": "ch01",
+      "front": "$\\ln z$ 绕原点一圈，虚部增量是多少？",
+      "back": "辐角增加 $2\\pi$，虚部多出 $2\\pi i$；开方绕一圈则按 $2\\pi/n$ 改变相位。",
+      "tags": [
+        "多值函数",
+        "ch01"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f53",
+      "chapterId": "ch01",
+      "front": "判断函数在无穷远点是否解析，先做什么替换？",
+      "back": "令 $z=1/w$，改考察 $f(1/w)$ 在 $w=0$ 处是否解析。",
+      "tags": [
+        "复球面",
+        "ch01"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f54",
+      "chapterId": "ch02",
+      "front": "\"一点可导\" 与 \"解析\" 的差别？",
+      "back": "可导只看该点差商极限；解析要求该点某个邻域内处处可导。孤立可导点不能套柯西定理。",
+      "tags": [
+        "解析",
+        "ch02"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f55",
+      "chapterId": "ch02",
+      "front": "柯西–黎曼第二个方程的符号是什么？",
+      "back": "$u_y=-v_x$，不是 $u_y=v_x$；负号来自沿虚轴求差商时 $1/i=-i$。",
+      "tags": [
+        "柯西黎曼",
+        "ch02"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f56",
+      "chapterId": "ch02",
+      "front": "什么是共轭调和函数？",
+      "back": "若 $v$ 使 $u+iv$ 解析，$v$ 就是 $u$ 的共轭调和函数；两个实函数经柯西–黎曼配对，与复共轭取镜像不是一回事。",
+      "tags": [
+        "调和函数",
+        "ch02"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f57",
+      "chapterId": "ch02",
+      "front": "$e^z$ 的周期是多少，出现在哪个方向？",
+      "back": "周期 $2\\pi i$，出现在虚部方向；实部平移 $2\\pi$ 会把模放大 $e^{2\\pi}$，不构成周期。",
+      "tags": [
+        "初等函数",
+        "ch02"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f58",
+      "chapterId": "ch02",
+      "front": "保角映射保持什么、不保什么？",
+      "back": "保持两曲线夹角的大小与方向；不保长度，长度按 $\\lvert f'(z)\\rvert$ 缩放；$f'=0$ 的临界点不保角。",
+      "tags": [
+        "保角映射",
+        "ch02"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f59",
+      "chapterId": "ch03",
+      "front": "$dz$ 与 $\\lvert dz\\rvert$ 有什么区别？",
+      "back": "$dz=dx+i\\,dy$ 带方向，积分结果是复数；$\\lvert dz\\rvert=ds$ 是非负弧长元，积分结果是长度。",
+      "tags": [
+        "复积分",
+        "ch03"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f60",
+      "chapterId": "ch03",
+      "front": "多连通区域内边界取什么方向？",
+      "back": "外边界逆时针，内边界顺时针；沿边界行走时区域在左侧。内边界取反结果差一个负号。",
+      "tags": [
+        "柯西定理",
+        "ch03"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f61",
+      "chapterId": "ch03",
+      "front": "柯西积分公式的适用前提？",
+      "back": "$f$ 在围道内及上解析，$z_0$ 在内部，围道逆时针；$z_0$ 在外部时积分为零，围道上有奇点要先挖小圆。",
+      "tags": [
+        "柯西公式",
+        "ch03"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f62",
+      "chapterId": "ch03",
+      "front": "高阶导数公式的分母幂次与阶乘怎么配？",
+      "back": "$f^{(n)}(z_0)=\\frac{n!}{2\\pi i}\\oint\\frac{f(z)}{(z-z_0)^{n+1}}dz$；分母 $n+1$ 次幂，分子 $n!$，两者随阶数同步升高。",
+      "tags": [
+        "高阶导数",
+        "ch03"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f63",
+      "chapterId": "ch03",
+      "front": "刘维尔定理的条件和结论？",
+      "back": "全平面解析（整函数）且有界的函数只能是常数；只在有界区域解析不满足定理条件。",
+      "tags": [
+        "刘维尔",
+        "ch03"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f64",
+      "chapterId": "ch04",
+      "front": "留数是洛朗展开中的哪个系数？",
+      "back": "$a_{-1}$，即 $\\frac{1}{z-z_0}$ 那一项的系数；闭路积分 $=2\\pi i$ 乘圈内留数之和。",
+      "tags": [
+        "留数",
+        "ch04"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f65",
+      "chapterId": "ch04",
+      "front": "一阶极点的留数公式？",
+      "back": "$\\operatorname{Res}f(z_0)=\\lim_{z\\to z_0}(z-z_0)f(z)$；$m$ 阶极点乘 $(z-z_0)^m$ 后求 $m-1$ 阶导，除以 $(m-1)!$。",
+      "tags": [
+        "留数公式",
+        "ch04"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f66",
+      "chapterId": "ch04",
+      "front": "本性奇点的留数怎么取？",
+      "back": "没有极限捷径，只能展洛朗级数，取 $1/(z-z_0)$ 项系数 $a_{-1}$；套极点公式会得到错误结果。",
+      "tags": [
+        "本性奇点",
+        "ch04"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f67",
+      "chapterId": "ch04",
+      "front": "大圆弧积分的估值不等式是什么？",
+      "back": "$\\lvert\\int_{C_R}f\\,dz\\rvert\\le\\pi R\\max\\lvert f\\rvert$；必须证明上界随 $R\\to\\infty$ 趋于零，弧段才能丢弃。",
+      "tags": [
+        "实积分",
+        "ch04"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f68",
+      "chapterId": "ch04",
+      "front": "Beta 型支点积分的标准结果？",
+      "back": "$\\int_0^\\infty\\frac{x^{a-1}}{1+x}dx=\\frac{\\pi}{\\sin\\pi a}$（$0<\\Re(a)<1$）；键孔围道两岸差因子 $1-e^{2\\pi i a}$。",
+      "tags": [
+        "支点积分",
+        "ch04"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f69",
+      "chapterId": "ch05",
+      "front": "本系统傅里叶正、逆变换的 $2\\pi$ 和指数符号怎么约定？",
+      "back": "正变换 $F(k)=\\int f(x)e^{-ikx}dx$，不带归一因子；逆变换 $f(x)=\\frac{1}{2\\pi}\\int F(k)e^{ikx}dk$，$2\\pi$ 在逆变换。",
+      "tags": [
+        "傅里叶变换",
+        "ch05"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f70",
+      "chapterId": "ch05",
+      "front": "求导性质：$f'$ 和 $f''$ 的频谱分别是什么？",
+      "back": "$f'\\leftrightarrow ikF(k)$；$f''\\leftrightarrow(ik)^2F=-k^2F$。二阶导数频域乘子带负号。",
+      "tags": [
+        "傅里叶变换",
+        "求导性质"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f71",
+      "chapterId": "ch05",
+      "front": "卷积定理把时域卷积变成频域什么运算？",
+      "back": "时域 $(f*g)(x)\\leftrightarrow F(k)G(k)$，频域乘积；反过来频域乘积的逆变换是时域卷积。",
+      "tags": [
+        "卷积定理",
+        "ch05"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f72",
+      "chapterId": "ch05",
+      "front": "$\\delta$ 函数的傅里叶变换是什么，说明什么？",
+      "back": "$\\mathcal F[\\delta]=1$，所有频率等权参与；反过来 $1$ 的逆变换是 $\\delta(x)$。",
+      "tags": [
+        "δ函数",
+        "ch05"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f73",
+      "chapterId": "ch05",
+      "front": "热传导初值问题变换后为什么能写成高斯核卷积？",
+      "back": "频域 $U=U_0e^{-a^2k^2t}$ 是乘积，按卷积定理逆变换为初值与高斯核 $G(x,t)$ 的卷积，核随时间展宽。",
+      "tags": [
+        "变换解方程",
+        "热传导"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f74",
+      "chapterId": "ch05",
+      "front": "矩形脉冲变窄时，频谱宽度怎么变？",
+      "back": "时域压窄、频谱铺宽（缩放性质）；脉冲面积守恒，频谱幅度带 $1/|a|$ 补偿。",
+      "tags": [
+        "缩放性质",
+        "ch05"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f75",
+      "chapterId": "ch06",
+      "front": "拉普拉斯变换的定义和收敛域是什么？",
+      "back": "$F(s)=\\int_0^\\infty f(t)e^{-st}dt$，$s=\\sigma+i\\omega$；收敛域是 $\\sigma>\\sigma_0$ 的右半平面，由函数增长速度决定。",
+      "tags": [
+        "拉普拉斯变换",
+        "ch06"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f76",
+      "chapterId": "ch06",
+      "front": "一阶、二阶导数性质各带哪些初值项？",
+      "back": "$\\mathcal L[f']=sF-f(0)$；$\\mathcal L[f'']=s^2F-sf(0)-f'(0)$。初值自动进代数方程分子。",
+      "tags": [
+        "导数性质",
+        "ch06"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f77",
+      "chapterId": "ch06",
+      "front": "一阶极点和 $m$ 阶极点分别对应什么时间域形状？",
+      "back": "一阶极点 $s=a$ 给 $Ae^{at}$；$m$ 阶极点给 $t^{m-1}e^{at}$ 乘多项式，拆部分分式要设到 $(s-a)^{-m}$。",
+      "tags": [
+        "逆变换",
+        "极点"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f78",
+      "chapterId": "ch06",
+      "front": "共轭复极点 $\\sigma\\pm i\\omega$ 对应什么？",
+      "back": "$e^{\\sigma t}\\cos\\omega t$ 与 $e^{\\sigma t}\\sin\\omega t$；实部定衰减或增长，虚部定振荡频率。",
+      "tags": [
+        "逆变换",
+        "复极点"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f79",
+      "chapterId": "ch06",
+      "front": "零初值时二阶方程的传递函数是什么？",
+      "back": "$H(s)=1/(s^2+ps+q)$，$Y=HF$；$H$ 只含系统系数，激励像函数是 $F$。",
+      "tags": [
+        "传递函数",
+        "ch06"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f80",
+      "chapterId": "ch06",
+      "front": "终值定理什么时候不能用？",
+      "back": "极点在虚轴给振荡、在右半平面给增长，终值不存在；只有极点留在左半平面（至多原点一阶）才能取 $s\\to0$ 极限。",
+      "tags": [
+        "终值定理",
+        "ch06"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f81",
+      "chapterId": "ch07",
+      "front": "三类方程按时间导数怎么区分？",
+      "back": "波动 $u_{tt}=a^2\\Delta u$ 二阶时间导数；热传导 $u_t=a^2\\Delta u$ 一阶；拉普拉斯 $\\Delta u=0$ 不含时间。",
+      "tags": [
+        "三类方程",
+        "ch07"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f82",
+      "chapterId": "ch07",
+      "front": "Dirichlet、Neumann、Robin 各约束什么？",
+      "back": "Dirichlet 给边界值；Neumann 给法向导数；Robin 给值与法向导数的线性组合 $\\alpha u+\\beta\\partial_n u=g$。",
+      "tags": [
+        "边界条件",
+        "ch07"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f83",
+      "chapterId": "ch07",
+      "front": "弦振动方程里 $a^2$ 等于什么，量纲如何？",
+      "back": "$a^2=T/\\rho$，$T$ 张力、$\\rho$ 线密度；$a$ 是波速，$a^2$ 单位 $\\mathrm{m}^2/\\mathrm{s}^2$。",
+      "tags": [
+        "弦振动",
+        "量纲"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f84",
+      "chapterId": "ch07",
+      "front": "线性问题的叠加拆法是什么？",
+      "back": "非齐次通解 = 一个特解 + 齐次通解；边界非齐次先靠辅助函数齐次化，特解不要求满足初始条件。",
+      "tags": [
+        "叠加原理",
+        "ch07"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f85",
+      "chapterId": "ch07",
+      "front": "为什么反向热传导通常不适定？",
+      "back": "反推时间时高频模态按 $e^{a^2k^2T}$ 放大，数据小扰动被放大成解大偏差，稳定性不成立。",
+      "tags": [
+        "适定性",
+        "热传导"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f86",
+      "chapterId": "ch07",
+      "front": "热传导方程扩散系数 $a^2$ 的单位是什么？",
+      "back": "$a^2=k/(c\\rho)$，单位 $\\mathrm{m}^2/\\mathrm{s}$；与波动方程里速度平方 $\\mathrm{m}^2/\\mathrm{s}^2$ 不同。",
+      "tags": [
+        "量纲",
+        "热传导"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f87",
+      "chapterId": "ch08",
+      "front": "分离变量五步是什么？",
+      "back": "设乘积解 → 分离成常微分方程 → 边界挑本征值 → 线性叠加 → 正交积分定系数。",
+      "tags": [
+        "分离变量",
+        "ch08"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f88",
+      "chapterId": "ch08",
+      "front": "Dirichlet 与 Neumann 本征函数各是什么？",
+      "back": "Dirichlet：$\\sin(n\\pi x/l)$；Neumann：$\\cos(n\\pi x/l)$ 加常数零模 $X_0=1$。",
+      "tags": [
+        "本征函数",
+        "ch08"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f89",
+      "chapterId": "ch08",
+      "front": "正交性证明的关键两步是什么？",
+      "back": "两次分部积分，齐次边界消掉边界项，得 $(\\lambda_m-\\lambda_n)\\int X_nX_m\\,dx=0$；本征值不同则积分为零。",
+      "tags": [
+        "正交性",
+        "ch08"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f90",
+      "chapterId": "ch08",
+      "front": "展开系数公式怎么写，带权时改哪里？",
+      "back": "$c_m=\\int fX_m\\,dx/\\int X_m^2\\,dx$；带权内积时分子分母都乘权重 $w(x)$。",
+      "tags": [
+        "展开系数",
+        "ch08"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f91",
+      "chapterId": "ch08",
+      "front": "非齐次边界怎么处理？",
+      "back": "设 $u=v+w$，$w$ 满足非齐次边界，$v$ 带齐次边界；$w$ 产生的残差项与源项一起按本征函数展开。",
+      "tags": [
+        "齐次化",
+        "ch08"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f92",
+      "chapterId": "ch08",
+      "front": "为什么 $\\lambda<0$ 在两端固定边界下只给零解？",
+      "back": "双曲单调解内部没有零点可供边界利用，$\\sinh(\\mu l)>0$ 无法在右端为零；能量积分也给出 $\\lambda\\ge0$。",
+      "tags": [
+        "本征值",
+        "ch08"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f93",
+      "chapterId": "ch09",
+      "front": "达朗贝尔公式里初速度项的系数是多少？",
+      "back": "$\\frac{1}{2a}$。它来自对时间积分一次，漏掉它速度贡献整体大一倍。",
+      "tags": [
+        "波动方程",
+        "ch09"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f94",
+      "chapterId": "ch09",
+      "front": "点 $(x,t)$ 的依赖区间是什么？长度多少？",
+      "back": "$[x-at,x+at]$，长度 $2at$。区间外的初始数据传不到该点。",
+      "tags": [
+        "特征线",
+        "因果性"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f95",
+      "chapterId": "ch09",
+      "front": "固定端与自由端各用哪种延拓？反射波符号如何？",
+      "back": "固定端 $u(0,t)=0$ 用奇延拓，反射波反号；自由端 $u_x(0,t)=0$ 用偶延拓，反射波同号。",
+      "tags": [
+        "延拓法",
+        "ch09"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f96",
+      "chapterId": "ch09",
+      "front": "正弦变换和余弦变换分别配哪类边界？",
+      "back": "正弦变换配 Dirichlet 边界 $u(0,t)=0$；余弦变换配 Neumann 边界 $u_x(0,t)=0$。",
+      "tags": [
+        "积分变换",
+        "热传导"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f97",
+      "chapterId": "ch09",
+      "front": "波动方程的两族特征线方程是什么？",
+      "back": "$x-at=$ 常数与 $x+at=$ 常数，信息沿特征线以速度 $a$ 传播。",
+      "tags": [
+        "特征线",
+        "ch09"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f98",
+      "chapterId": "ch09",
+      "front": "对时间做拉普拉斯变换解半无界热传导，第一步方程是什么？",
+      "back": "$s\\bar u-u(x,0)=a^2\\bar u_{xx}$，变成关于 $x$ 的常微分方程，解出后再逆变换。",
+      "tags": [
+        "拉普拉斯变换",
+        "热传导"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f99",
+      "chapterId": "ch10",
+      "front": "三维泊松方程的基本解是什么？",
+      "back": "$G_0=1/(4\\pi r)$，$r=\\lvert\\mathbf r-\\mathbf r_0\\rvert$；二维是对数型，一维是距离一次式。",
+      "tags": [
+        "基本解",
+        "ch10"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f100",
+      "chapterId": "ch10",
+      "front": "接地平面的镜像源怎么放？",
+      "back": "在对称位置 $(0,0,-z_0)$ 放电量相反的镜像源，平面上 $r_1=r_2$，两项相减为零。",
+      "tags": [
+        "镜像法",
+        "静电场"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f101",
+      "chapterId": "ch10",
+      "front": "接地球面的镜像位置与电量公式？",
+      "back": "反演点 $b=R^2/a$，镜像电量 $q'=-R/a$（以真实源电量为单位）。",
+      "tags": [
+        "镜像法",
+        "球面"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f102",
+      "chapterId": "ch10",
+      "front": "推迟势里为什么是 $t-r/a$ 而不是 $t$？",
+      "back": "扰动以速度 $a$ 走 $r$ 距离需要 $r/a$ 时间，场点在 $t$ 时刻收到的是源在 $t-r/a$ 时刻发出的扰动；源只在过去光锥内贡献。",
+      "tags": [
+        "推迟势",
+        "因果性"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f103",
+      "chapterId": "ch10",
+      "front": "格林函数本征展开的一般形式？",
+      "back": "$G=\\sum_n\\varphi_n(r)\\varphi_n(r_0)/\\lambda_n$，分母为本征值，展开基对应齐次边界。",
+      "tags": [
+        "本征展开",
+        "ch10"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f104",
+      "chapterId": "ch10",
+      "front": "基本解与格林函数差在哪？",
+      "back": "基本解只满足点源方程；格林函数在基本解上加边界修正项 $h$，同时满足方程与齐次边界条件。",
+      "tags": [
+        "格林函数",
+        "基本解"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f105",
+      "chapterId": "ch11",
+      "front": "$P_2(x)$ 的表达式是什么？",
+      "back": "$P_2(x)=(3x^2-1)/2$；由罗德里格斯公式对 $(x^2-1)^2$ 求二阶导数再除以 $8$ 得到。",
+      "tags": [
+        "勒让德多项式",
+        "ch11"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f106",
+      "chapterId": "ch11",
+      "front": "勒让德多项式的正交积分公式？",
+      "back": "$\\int_{-1}^{1}P_l(x)P_m(x)\\,dx=\\frac{2}{2l+1}\\delta_{lm}$，同次模长平方为 $2/(2l+1)$。",
+      "tags": [
+        "正交性",
+        "ch11"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f107",
+      "chapterId": "ch11",
+      "front": "为什么球坐标分离后 $l$ 必须是整数？",
+      "back": "解在南北极点要有界；幂级数不截断会在端点对数发散，递推在 $k=l$ 处截断要求 $l=0,1,2,\\dots$。",
+      "tags": [
+        "勒让德方程",
+        "本征值"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f108",
+      "chapterId": "ch11",
+      "front": "球谐函数的归一化因子是什么？",
+      "back": "$N_{lm}=\\sqrt{\\frac{2l+1}{4\\pi}\\frac{(l-m)!}{(l+m)!}}$，漏了它展开系数整体差常数。",
+      "tags": [
+        "球谐函数",
+        "归一化"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f109",
+      "chapterId": "ch11",
+      "front": "连带勒让德函数的定义式？",
+      "back": "$P_l^m(x)=(1-x^2)^{m/2}\\frac{d^m}{dx^m}P_l(x)$，是 $m\\ne0$ 时的极角解。",
+      "tags": [
+        "连带勒让德",
+        "ch11"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f110",
+      "chapterId": "ch11",
+      "front": "径向欧拉方程的两个解是什么？",
+      "back": "$R=Ar^l+Br^{-(l+1)}$；球内丢掉 $r^{-(l+1)}$，球外丢掉 $r^l$。",
+      "tags": [
+        "径向方程",
+        "分离变量"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f111",
+      "chapterId": "ch12",
+      "front": "柱坐标分离变量后，径向方程叫什么方程？",
+      "back": "贝塞尔方程 $x^2R''+xR'+(x^2-m^2)R=0$，由 $r^2R''+rR'+(\\beta^2r^2-m^2)R=0$ 经 $x=\\beta r$ 换尺度得到。",
+      "tags": [
+        "贝塞尔方程",
+        "ch12"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f112",
+      "chapterId": "ch12",
+      "front": "圆柱内部问题为什么丢掉 $Y_n$？",
+      "back": "$Y_n$ 在原点按对数或负幂次发散，轴心物理量必须有限；内部包含 $r=0$，只保留原点有限的 $J_n$。",
+      "tags": [
+        "第二类贝塞尔",
+        "有界性"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f113",
+      "chapterId": "ch12",
+      "front": "傅里叶–贝塞尔展开的正交权重是什么？",
+      "back": "权重为 $r$，内积 $\\int_0^a J_\\nu(\\mu_mr)J_\\nu(\\mu_nr)\\,r\\,dr$；漏掉权重 $r$，系数全部错位。",
+      "tags": [
+        "带权正交",
+        "ch12"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f114",
+      "chapterId": "ch12",
+      "front": "狄利克雷边界与诺伊曼边界各取哪类零点？",
+      "back": "$u(a)=0$ 取 $J_\\nu(\\mu a)=0$ 的函数零点；$u_r(a)=0$ 取 $J_\\nu'(\\mu a)=0$ 的导数零点。",
+      "tags": [
+        "本征值",
+        "边界条件"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f115",
+      "chapterId": "ch12",
+      "front": "低阶球贝塞尔 $j_0$、$n_0$ 的初等表达式是什么？",
+      "back": "$j_0(x)=\\sin x/x$，$n_0(x)=-\\cos x/x$；半阶贝塞尔落地成正弦余弦除以 $x$ 的组合。",
+      "tags": [
+        "球贝塞尔",
+        "ch12"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f116",
+      "chapterId": "ch13",
+      "front": "泛函和普通函数的自变量有什么区别？",
+      "back": "普通函数输入一个数输出一个数；泛函输入一整条曲线、输出一个数，泛函值由整条曲线的积分决定。",
+      "tags": [
+        "泛函",
+        "ch13"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f117",
+      "chapterId": "ch13",
+      "front": "欧拉–拉格朗日方程的公式是什么？",
+      "back": "$\\frac{d}{dx}\\frac{\\partial F}{\\partial y'}-\\frac{\\partial F}{\\partial y}=0$，由一阶变分为零、分部积分并消去边界项得到。",
+      "tags": [
+        "变分法",
+        "ch13"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f118",
+      "chapterId": "ch13",
+      "front": "固定端点条件在 EL 推导中起什么作用？",
+      "back": "扰动 $\\eta(a)=\\eta(b)=0$，分部积分留下的边界项 $[F_{y'}\\eta]_a^b$ 消失；端点自由时要换自然边界条件。",
+      "tags": [
+        "边界项",
+        "分部积分"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f119",
+      "chapterId": "ch13",
+      "front": "哈密顿原理里拉格朗日量 $L$ 等于什么？",
+      "back": "$L=T-V$，动能减势能；作用量 $S=\\int L\\,dt$ 取驻值导出拉格朗日方程。写成 $T+V$ 符号会反。",
+      "tags": [
+        "哈密顿原理",
+        "作用量"
+      ],
+      "_added": true
+    },
+    {
+      "id": "f120",
+      "chapterId": "ch13",
+      "front": "瑞利–里兹法给出的本征值是上界还是下界？",
+      "back": "上界。试探函数空间是全集子集，子集内最优不低于全局最优，近似值从上方单调逼近真值。",
+      "tags": [
+        "瑞利商",
+        "里兹法"
+      ],
+      "_added": true
     }
   ],
   "misconceptions": [],

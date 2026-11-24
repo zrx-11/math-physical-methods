@@ -1,0 +1,67 @@
+{
+  "chapterId": "ch03",
+  "quizzes": [
+    {
+      "question": "$\\oint_{\\lvert z-1\\rvert=1}\\dfrac{e^z}{z-1}\\,dz$ 等于：",
+      "options": ["$2\\pi i e$", "$0$", "$2\\pi i$"],
+      "answer": 0,
+      "explain": "$f(z)=e^z$ 解析，$z_0=1$ 在圆内，柯西公式给出积分 $=2\\pi i f(1)=2\\pi i e\\approx17.0794\\,i$。",
+      "relatedConceptId": "c303"
+    },
+    {
+      "question": "$\\oint_{\\lvert z\\rvert=1}\\dfrac{dz}{z-2}$ 等于：",
+      "options": ["$2\\pi i$", "$0$", "$-2\\pi i$"],
+      "answer": 1,
+      "explain": "唯一奇点 $z=2$ 在单位圆外部，围道内部函数解析，柯西定理给出闭路积分为零；不能对圈外奇点套柯西公式。",
+      "relatedConceptId": "c302"
+    },
+    {
+      "question": "$\\oint_{\\lvert z\\rvert=1}\\dfrac{e^z}{z^2}\\,dz$ 等于：",
+      "options": ["$2\\pi i e$", "$\\pi i$", "$2\\pi i$"],
+      "answer": 2,
+      "explain": "高阶导数公式 $n=1$，积分 $=2\\pi i f'(0)$，$f'(z)=e^z$，$f'(0)=1$，结果 $2\\pi i$。分母 $z^2$ 对应 $n+1=2$，分子 $1!=1$。",
+      "relatedConceptId": "c304"
+    },
+    {
+      "question": "曲线参数化 $z=z(t)$ 时，复积分的微元 $dz$ 是：",
+      "options": ["$\\lvert z'(t)\\rvert\\,dt$", "$z'(t)\\,dt$", "$dx+dy$"],
+      "answer": 1,
+      "explain": "$dz=z'(t)dt$ 是带方向的复数微元；$\\lvert z'(t)\\rvert dt=ds$ 是弧长微元，二者用途不同，不能互换。",
+      "relatedConceptId": "c301"
+    },
+    {
+      "question": "非常数解析函数 $\\lvert f(z)\\rvert$ 的最大值出现在：",
+      "options": ["区域内部", "区域边界上", "导数为零的临界点"],
+      "answer": 1,
+      "explain": "最大模原理规定内部取不到最大模，最大值只能在边界取得；常数函数是唯一例外。实函数的内部峰不能套到解析函数上。",
+      "relatedConceptId": "c305"
+    }
+  ],
+  "flashcards": [
+    {
+      "front": "$dz$ 与 $\\lvert dz\\rvert$ 有什么区别？",
+      "back": "$dz=dx+i\\,dy$ 带方向，积分结果是复数；$\\lvert dz\\rvert=ds$ 是非负弧长元，积分结果是长度。",
+      "tags": ["复积分", "ch03"]
+    },
+    {
+      "front": "多连通区域内边界取什么方向？",
+      "back": "外边界逆时针，内边界顺时针；沿边界行走时区域在左侧。内边界取反结果差一个负号。",
+      "tags": ["柯西定理", "ch03"]
+    },
+    {
+      "front": "柯西积分公式的适用前提？",
+      "back": "$f$ 在围道内及上解析，$z_0$ 在内部，围道逆时针；$z_0$ 在外部时积分为零，围道上有奇点要先挖小圆。",
+      "tags": ["柯西公式", "ch03"]
+    },
+    {
+      "front": "高阶导数公式的分母幂次与阶乘怎么配？",
+      "back": "$f^{(n)}(z_0)=\\frac{n!}{2\\pi i}\\oint\\frac{f(z)}{(z-z_0)^{n+1}}dz$；分母 $n+1$ 次幂，分子 $n!$，两者随阶数同步升高。",
+      "tags": ["高阶导数", "ch03"]
+    },
+    {
+      "front": "刘维尔定理的条件和结论？",
+      "back": "全平面解析（整函数）且有界的函数只能是常数；只在有界区域解析不满足定理条件。",
+      "tags": ["刘维尔", "ch03"]
+    }
+  ]
+}

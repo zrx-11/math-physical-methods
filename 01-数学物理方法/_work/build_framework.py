@@ -32,6 +32,12 @@ def w(rel, text):
 
 
 def main():
+    # 防误跑：本文件只用于生成"框架版"。当前目录已是填充版，直接跑会把精讲覆盖回骨架。
+    ch0 = os.path.join(ROOT, "chapters", "ch00.md")
+    if os.path.exists(ch0) and "--force" not in sys.argv:
+        if os.path.getsize(ch0) > 5000:
+            sys.exit("当前已是填充版（chapters/ch00.md 超过 5000 字节）。本脚本会用旧框架文案覆盖精讲。\n"
+                     "确实要回退到框架版，请加 --force。")
     concepts = CONCEPTS_A + CONCEPTS_B
     cids = {c["id"] for c in concepts}
     assert len(cids) == len(concepts), "概念 id 有重复"

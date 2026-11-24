@@ -1,0 +1,167 @@
+[
+ {
+  "check": "首页渲染",
+  "pass": false,
+  "extra": ""
+ },
+ {
+  "check": "书卡数量",
+  "pass": true,
+  "extra": "1/1"
+ },
+ {
+  "check": "总览页：数学物理方法 · 学习总览",
+  "pass": true,
+  "extra": "2286 字符"
+ },
+ {
+  "check": "math-physical-methods 首章渲染",
+  "pass": true,
+  "extra": "1387 字符"
+ },
+ {
+  "check": "math-physical-methods 末章渲染",
+  "pass": true,
+  "extra": "932 字符"
+ },
+ {
+  "check": "math-physical-methods 测验题数",
+  "pass": true,
+  "extra": "28 题"
+ },
+ {
+  "check": "math-physical-methods 测验正确反馈",
+  "pass": true,
+  "extra": "✓ 正确"
+ },
+ {
+  "check": "math-physical-methods 测验解析",
+  "pass": true,
+  "extra": ""
+ },
+ {
+  "check": "抽认卡正面有内容",
+  "pass": true,
+  "extra": "重根情况下 $y''+py'+qy=0$ 的通解"
+ },
+ {
+  "check": "抽认卡翻转",
+  "pass": true,
+  "extra": ""
+ },
+ {
+  "check": "认识计数增加",
+  "pass": true,
+  "extra": "1"
+ },
+ {
+  "check": "术语表过滤",
+  "pass": true,
+  "extra": "共63 过滤后2（复数）"
+ },
+ {
+  "check": "全局搜索命中",
+  "pass": true,
+  "extra": "14 条"
+ },
+ {
+  "check": "分词搜索（含停用词）",
+  "pass": true,
+  "extra": "29 条"
+ },
+ {
+  "check": "多词搜索命中",
+  "pass": true,
+  "extra": "14 条"
+ },
+ {
+  "check": "结果片段高亮",
+  "pass": true,
+  "extra": "23 处"
+ },
+ {
+  "check": "点击结果定位高亮",
+  "pass": true,
+  "extra": "1 处"
+ },
+ {
+  "check": "结果按章节分组",
+  "pass": true,
+  "extra": "7 组：测验2 / 第 1 章：复数与复变函数5 / 第 3 章：复变积分2"
+ },
+ {
+  "check": "结果标题可读",
+  "pass": true,
+  "extra": "例：测验"
+ },
+ {
+  "check": "同义词表已注入",
+  "pass": true,
+  "extra": "16 组"
+ },
+ {
+  "check": "同义召回生效",
+  "pass": true,
+  "extra": "搜「定义」有 40 条精确命中，同义专用断言跳过"
+ },
+ {
+  "check": "进度跨刷新持久",
+  "pass": true,
+  "extra": "《数学物理方法》 进度 21% · 已学 3/14 章 → 《数学物理方法》 进度 21% · 已学 3/14 章"
+ },
+ {
+  "check": "学习路径完成标记",
+  "pass": true,
+  "extra": ""
+ },
+ {
+  "check": "诊断页可打开",
+  "pass": true,
+  "extra": ""
+ },
+ {
+  "check": "深度片段（本书无，跳过）",
+  "pass": true,
+  "extra": "本书无深度片段"
+ },
+ {
+  "check": "出处脚注存在",
+  "pass": true,
+  "extra": "1 处"
+ },
+ {
+  "check": "总入口有导出/导入按钮",
+  "pass": true,
+  "extra": ""
+ },
+ {
+  "check": "进度导出函数可用",
+  "pass": true,
+  "extra": ""
+ },
+ {
+  "check": "版本常量写入",
+  "pass": true,
+  "extra": "1.9.0"
+ },
+ {
+  "check": "误解卡（无数据，跳过）",
+  "pass": true,
+  "extra": "manifest 未配 optionMisconceptions"
+ },
+ {
+  "check": "主题切换",
+  "pass": true,
+  "extra": "dark → light"
+ },
+ {
+  "check": "句级出处（无 claims，跳过）",
+  "pass": true,
+  "extra": "manifest 未配 claims[]"
+ },
+ {
+  "check": "控制台无错误",
+  "pass": true,
+  "extra": ""
+ }
+]

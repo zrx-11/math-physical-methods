@@ -12,22 +12,22 @@
  {
   "check": "总览页：数学物理方法 · 学习总览",
   "pass": true,
-  "extra": "2287 字符"
+  "extra": "2479 字符"
  },
  {
   "check": "math-physical-methods 首章渲染",
   "pass": true,
-  "extra": "1387 字符"
+  "extra": "13062 字符"
  },
  {
   "check": "math-physical-methods 末章渲染",
   "pass": true,
-  "extra": "932 字符"
+  "extra": "8549 字符"
  },
  {
   "check": "math-physical-methods 测验题数",
   "pass": true,
-  "extra": "28 题"
+  "extra": "100 题"
  },
  {
   "check": "math-physical-methods 测验正确反馈",
@@ -62,22 +62,22 @@
  {
   "check": "全局搜索命中",
   "pass": true,
-  "extra": "14 条"
+  "extra": "22 条"
  },
  {
   "check": "分词搜索（含停用词）",
   "pass": true,
-  "extra": "29 条"
+  "extra": "40 条"
  },
  {
   "check": "多词搜索命中",
   "pass": true,
-  "extra": "14 条"
+  "extra": "22 条"
  },
  {
   "check": "结果片段高亮",
   "pass": true,
-  "extra": "23 处"
+  "extra": "35 处"
  },
  {
   "check": "点击结果定位高亮",
@@ -87,7 +87,7 @@
  {
   "check": "结果按章节分组",
   "pass": true,
-  "extra": "7 组：测验2 / 第 1 章：复数与复变函数5 / 第 3 章：复变积分2"
+  "extra": "10 组：测验2 / 第 2 章：解析函数4 / 第 1 章：复数与复变函数5"
  },
  {
   "check": "结果标题可读",

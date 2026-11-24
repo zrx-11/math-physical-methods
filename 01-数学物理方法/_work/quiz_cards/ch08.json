@@ -1,0 +1,79 @@
+{
+  "chapterId": "ch08",
+  "quizzes": [
+    {
+      "question": "两端固定 $X(0)=X(l)=0$ 的本征值与本征函数是：",
+      "options": ["$\\lambda_n=(n\\pi/l)^2$，$X_n=\\sin(n\\pi x/l)$", "$\\lambda_n=(n\\pi/l)^2$，$X_n=\\cos(n\\pi x/l)$", "$\\lambda_n=((n+\\tfrac12)\\pi/l)^2$，半周期正弦", "$\\lambda_n=n^2\\pi$，$X_n=x^n$"],
+      "answer": 0,
+      "explain": "Dirichlet 边界挑出正弦序列；余弦是 Neumann 序列，半整数波数是混合边界，多项式不是该方程的解。",
+      "relatedConceptId": "c802"
+    },
+    {
+      "question": "Neumann 边界 $X'(0)=X'(l)=0$ 的零模是：",
+      "options": ["没有零模，$\\lambda$ 全为正", "$\\lambda_0=0$，$X_0=1$（常数）", "$\\lambda_0=\\pi^2/l^2$，$X_0=x$", "$\\lambda_0=-1$，$X_0=e^x$"],
+      "answer": 1,
+      "explain": "常数函数导数处处为零，满足 Neumann 边界，是合法非零解，对应 $\\lambda_0=0$。Dirichlet 边界下常数两端不为零，零模缺失。",
+      "relatedConceptId": "c802"
+    },
+    {
+      "question": "本征展开系数 $c_m=\\int fX_m\\,dx/\\int X_m^2\\,dx$ 里，分母是：",
+      "options": ["$2\\pi$", "$l^2$", "模长平方 $\\int X_m^2\\,dx$", "本征值 $\\lambda_m$"],
+      "answer": 2,
+      "explain": "两边乘 $X_m$ 积分后正交性消去其余模态，留下 $c_m$ 乘模长平方。正弦、余弦模长平方为 $l/2$，常数零模为 $l$。",
+      "relatedConceptId": "c804"
+    },
+    {
+      "question": "分离变量法第一步对解做的假设是：",
+      "options": ["$u(x,t)=X(x)T(t)$", "$u=e^{kx}$", "$u=\\sum a_nx^n$", "$u=f(x)+g(t)$"],
+      "answer": 0,
+      "explain": "设乘积解 $u=XT$，代入后除以 $XT$ 把空间、时间分开，令比值为分离常数。加和形式不是乘积假设；指数、幂级数是另外的解法。",
+      "relatedConceptId": "c801"
+    },
+    {
+      "question": "直角坐标二维分离 $u=X(x)Y(y)T(t)$，各方向分离常数满足：",
+      "options": ["三者互不相关，可独立取值", "$\\lambda=\\mu+\\nu$", "$\\lambda=\\mu\\nu$", "$\\lambda=\\mu-\\nu$"],
+      "answer": 1,
+      "explain": "代回原方程，总本征值等于两个空间方向本征值相加 $\\lambda=\\mu+\\nu$。不满足这个约束的常数组合配不平原方程。",
+      "relatedConceptId": "c805"
+    },
+    {
+      "question": "非齐次方程源项 $f(x,t)$ 按本征函数展开后，模态系数 $f_n(t)$ 的特点是：",
+      "options": ["随时间变化，每个模态要解一个受迫常微分方程", "是与时间无关的常数", "等于初始温度", "只含空间坐标"],
+      "answer": 0,
+      "explain": "$f_n(t)$ 由源项对 $X_n$ 积分得到，一般随时间变；波动模态解 $T_n''+a^2\\lambda_nT_n=f_n(t)$，热传导模态解 $T_n'+a^2\\lambda_nT_n=f_n(t)$。",
+      "relatedConceptId": "c803"
+    }
+  ],
+  "flashcards": [
+    {
+      "front": "分离变量五步是什么？",
+      "back": "设乘积解 → 分离成常微分方程 → 边界挑本征值 → 线性叠加 → 正交积分定系数。",
+      "tags": ["分离变量", "ch08"]
+    },
+    {
+      "front": "Dirichlet 与 Neumann 本征函数各是什么？",
+      "back": "Dirichlet：$\\sin(n\\pi x/l)$；Neumann：$\\cos(n\\pi x/l)$ 加常数零模 $X_0=1$。",
+      "tags": ["本征函数", "ch08"]
+    },
+    {
+      "front": "正交性证明的关键两步是什么？",
+      "back": "两次分部积分，齐次边界消掉边界项，得 $(\\lambda_m-\\lambda_n)\\int X_nX_m\\,dx=0$；本征值不同则积分为零。",
+      "tags": ["正交性", "ch08"]
+    },
+    {
+      "front": "展开系数公式怎么写，带权时改哪里？",
+      "back": "$c_m=\\int fX_m\\,dx/\\int X_m^2\\,dx$；带权内积时分子分母都乘权重 $w(x)$。",
+      "tags": ["展开系数", "ch08"]
+    },
+    {
+      "front": "非齐次边界怎么处理？",
+      "back": "设 $u=v+w$，$w$ 满足非齐次边界，$v$ 带齐次边界；$w$ 产生的残差项与源项一起按本征函数展开。",
+      "tags": ["齐次化", "ch08"]
+    },
+    {
+      "front": "为什么 $\\lambda<0$ 在两端固定边界下只给零解？",
+      "back": "双曲单调解内部没有零点可供边界利用，$\\sinh(\\mu l)>0$ 无法在右端为零；能量积分也给出 $\\lambda\\ge0$。",
+      "tags": ["本征值", "ch08"]
+    }
+  ]
+}

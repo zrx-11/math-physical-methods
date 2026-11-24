@@ -1,0 +1,67 @@
+{
+  "chapterId": "ch02",
+  "quizzes": [
+    {
+      "question": "设 $f=u+iv$，柯西–黎曼方程的正确形式是：",
+      "options": ["$u_x=v_y,\\ u_y=-v_x$", "$u_x=-v_y,\\ u_y=v_x$", "$u_x=u_y,\\ v_x=v_y$"],
+      "answer": 0,
+      "explain": "沿实轴逼近得 $f'=u_x+iv_x$，沿虚轴逼近得 $f'=v_y-iu_y$，配对得 $u_x=v_y$、$u_y=-v_x$。第二个方程的负号来自 $1/i=-i$。",
+      "relatedConceptId": "c202"
+    },
+    {
+      "question": "已知调和函数 $u=x^2-y^2$，其共轭调和函数 $v$ 为（差常数）：",
+      "options": ["$-2xy$", "$2xy$", "$x^2+y^2$"],
+      "answer": 1,
+      "explain": "$u_x=2x=v_y$ 积分得 $v=2xy+h(x)$；由 $u_y=-2y=-v_x$ 得 $h'(x)=0$，故 $v=2xy+C$，对应 $f=z^2$。",
+      "relatedConceptId": "c202"
+    },
+    {
+      "question": "$\\sin i$ 等于：",
+      "options": ["$\\sinh1$", "$i\\sin1$", "$i\\sinh1$"],
+      "answer": 2,
+      "explain": "$\\sin i=(e^{-1}-e)/(2i)=i\\sinh1$，$\\sinh1\\approx1.1752$，虚轴上正弦按双曲函数增长，不再被 1 夹住。",
+      "relatedConceptId": "c204"
+    },
+    {
+      "question": "函数 $f(z)=\\bar z$ 的可导情况是：",
+      "options": ["处处可导", "处处连续、处处不可导", "仅在原点可导"],
+      "answer": 1,
+      "explain": "差商 $\\overline{\\Delta z}/\\Delta z$ 沿实轴得 1、沿虚轴得 $-1$，方向依赖；$\\bar z$ 连续但不满足柯西–黎曼方程，处处不可导。",
+      "relatedConceptId": "c201"
+    },
+    {
+      "question": "保角映射中，长度的局部缩放因子是：",
+      "options": ["$\\arg f'(z)$", "$\\lvert f'(z)\\rvert$", "$f'(z)$ 的实部"],
+      "answer": 1,
+      "explain": "一阶近似 $f'(z_0)(z-z_0)$ 里，辐角负责转动、模负责拉伸；角度保住，长度按 $\\lvert f'(z)\\rvert$ 缩放，换算边界条件时要补这个因子。",
+      "relatedConceptId": "c205"
+    }
+  ],
+  "flashcards": [
+    {
+      "front": "\"一点可导\" 与 \"解析\" 的差别？",
+      "back": "可导只看该点差商极限；解析要求该点某个邻域内处处可导。孤立可导点不能套柯西定理。",
+      "tags": ["解析", "ch02"]
+    },
+    {
+      "front": "柯西–黎曼第二个方程的符号是什么？",
+      "back": "$u_y=-v_x$，不是 $u_y=v_x$；负号来自沿虚轴求差商时 $1/i=-i$。",
+      "tags": ["柯西黎曼", "ch02"]
+    },
+    {
+      "front": "什么是共轭调和函数？",
+      "back": "若 $v$ 使 $u+iv$ 解析，$v$ 就是 $u$ 的共轭调和函数；两个实函数经柯西–黎曼配对，与复共轭取镜像不是一回事。",
+      "tags": ["调和函数", "ch02"]
+    },
+    {
+      "front": "$e^z$ 的周期是多少，出现在哪个方向？",
+      "back": "周期 $2\\pi i$，出现在虚部方向；实部平移 $2\\pi$ 会把模放大 $e^{2\\pi}$，不构成周期。",
+      "tags": ["初等函数", "ch02"]
+    },
+    {
+      "front": "保角映射保持什么、不保什么？",
+      "back": "保持两曲线夹角的大小与方向；不保长度，长度按 $\\lvert f'(z)\\rvert$ 缩放；$f'=0$ 的临界点不保角。",
+      "tags": ["保角映射", "ch02"]
+    }
+  ]
+}
